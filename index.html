@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map Tap Stats</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
+  h1 { font-size: 20px; }
+  h2 { font-size: 16px; margin-top: 25px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+  th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; font-size: 14px; }
+  th { background: #eee; }
+  input[type=text], input[type=number], input[type=date], select { padding: 4px; font-size: 14px; }
+  .tabs { margin-top: 10px; }
+  .tabs button { padding: 6px 12px; margin-right: 5px; cursor: pointer; }
+  .tabs button.active { font-weight: bold; text-decoration: underline; }
+  .round-row { margin-bottom: 8px; }
+  .round-row label { display: inline-block; width: 90px; font-size: 13px; }
+  .round-row input[type=number] { width: 60px; }
+  button { cursor: pointer; }
+  .small { color: #666; font-size: 12px; }
+  .day-item { padding: 6px 0; border-bottom: 1px solid #ddd; }
+</style>
+</head>
+<body>
+
+<h1>Trivia Players Against Drunk Driving - Map Tap Stats</h1>
+<p class="small">Scoring: R1 x1, R2 x1, R3 x2, R4 x3, R5 x3 (max 1000/day).</p>
+
+<div class="tabs" id="tabs"></div>
+<div id="content"></div>
+
+<script>
+const ROUND_WEIGHTS = [1,1,2,3,3];
+const MAX_TOTAL = ROUND_WEIGHTS.reduce((a,w)=>a+w*100,0);
+const STORAGE_KEY = 'geoTrackerData';
+
+//Upload
+function loadFromStorage(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const parsed = JSON.parse(raw);
+      if(parsed && Array.isArray(parsed.players) && Array.isArray(parsed.days)) return parsed;
+    }
+  }catch(e){ console.warn('Could not read saved data:', e); }
+  return null;
+}
+//Download
+function saveToStorage(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  catch(e){ console.warn('Could not save data:', e); }
+}
+
+let state = loadFromStorage() || {
+  players: ['Player 1','Player 2','Player 3','Player 4','Player 5','Player 6'],
+  days: []
+};
+
+const TABS = [
+  {id:'standings', label:'Standings'},
+  {id:'entry', label:'Add Results'},
+  {id:'players', label:'Players'},
+  {id:'cities', label:'Cities'},
+  // {id:'h2h', label:'Compare Players'},
+  {id:'settings', label:'Settings'},
+];
+let activeTab = 'standings';
+let editingDayId = null;
+
+function renderTabs(){
+  document.getElementById('tabs').innerHTML = TABS.map(t=>
+    `<button data-tab="${t.id}" class="${t.id===activeTab?'active':''}">${t.label}</button>`
+  ).join('');
+  document.querySelectorAll('#tabs button').forEach(b=>{
+    b.onclick = ()=>{ activeTab = b.dataset.tab; render(); };
+  });
+}
+
+function render(){
+  saveToStorage();
+  renderTabs();
+  const c = document.getElementById('content');
+  if(activeTab==='standings') c.innerHTML = viewStandings();
+  else if(activeTab==='entry') c.innerHTML = viewEntry();
+  else if(activeTab==='players') c.innerHTML = viewPlayers();
+  else if(activeTab==='cities') c.innerHTML = viewCities();
+  else if(activeTab==='h2h') c.innerHTML = viewH2H();
+  else if(activeTab==='settings') c.innerHTML = viewSettings();
+  attachHandlers();
+}
+
+function dayTotal(day, player){
+  let total = 0;
+  day.rounds.forEach((r,i)=>{
+    const raw = r.scores[player];
+    if(typeof raw === 'number') total += raw * ROUND_WEIGHTS[i];
+  });
+  return total;
+}
+function seasonStats(){
+  return state.players.map(p=>{
+    const totals = state.days.map(d=>dayTotal(d,p));
+    const played = state.days.filter(d=> d.rounds.some(r=>typeof r.scores[p]==='number')).length;
+    const sum = totals.reduce((a,b)=>a+b,0);
+    const avg = played ? sum/played : 0;
+    const best = totals.length ? Math.max(...totals) : 0;
+    const worst = totals.length ? Math.min(...totals) : 0;
+    return {player:p, total:sum, played, avg, best, worst};
+  }).sort((a,b)=>b.avg-a.avg);
+}
+function cityStats(){
+  const map = {};
+  state.days.forEach(day=>{
+    day.rounds.forEach(r=>{
+      const key = (r.city||'Unnamed').trim();
+      if(!key) return;
+      if(!map[key]) map[key] = {city:key, scores:[], playedCount:0};
+      Object.entries(r.scores).forEach(([p,v])=>{
+        if(typeof v==='number'){ map[key].scores.push({player:p, score:v}); }
+      });
+      map[key].playedCount += 1;
+    });
+  });
+  return Object.values(map).map(c=>{
+    const avg = c.scores.length ? c.scores.reduce((a,s)=>a+s.score,0)/c.scores.length : 0;
+    const best = c.scores.length ? c.scores.reduce((a,s)=>s.score>a.score?s:a) : null;
+    const worst = c.scores.length ? c.scores.reduce((a,s)=>s.score<a.score?s:a) : null;
+    return {...c, avg, best, worst};
+  }).sort((a,b)=>a.avg-b.avg);
+}
+
+function viewStandings(){
+  const stats = seasonStats();
+  if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
+  return `
+  <h2>Standings</h2>
+  <p class="small"> Sorted by average daily score</p>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Avg Score</th><th>Total Score</th><th>Days Played</th>
+    ${stats.map((s,i)=>`
+      <tr>
+        <td>${i+1}</td>
+        <td>${s.player}</td>
+        <td>${s.avg.toFixed(1)}</td>
+        <td>${s.total.toFixed(0)}</td>
+        <td>${s.played}</td>
+      </tr>`).join('')}
+  </table>`;
+}
+
+function viewEntry(){
+  return `
+  <h2>Add Results</h2>
+  <p>Date: <input type="date" id="entry-date" value="${new Date().toISOString().slice(0,10)}"></p>
+  <div id="entry-rounds"></div>
+  <button id="save-day">Save Day</button>
+  <span class="small" id="entry-msg"></span>
+
+  <h2>History</h2>
+  ${state.days.length===0 ? '<p class="small">Nothing logged yet.</p>' :
+    state.days.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(d=>`
+      <div class="day-item">
+        <strong>${d.date}</strong> — ${d.rounds.map(r=>r.city||'—').join(' | ')}
+        <button data-edit="${d.id}">Edit</button>
+      </div>`).join('')}
+  `;
+}
+function roundsFormHTML(existingRounds){
+  const players = state.players;
+  const cityHeaders = [0,1,2,3,4].map(i=>{
+    const r = existingRounds ? existingRounds[i] : null;
+    const cityVal = r ? (r.city||'') : '';
+    return `<th>Round ${i+1}<br><input type="text" class="city-input" data-round="${i}" placeholder="City" value="${cityVal}"></th>`;
+  }).join('');
+  const playerRows = players.map(p=>{
+    let total = 0;
+    const cells = [0,1,2,3,4].map(i=>{
+      const r = existingRounds ? existingRounds[i] : null;
+      const v = r && typeof r.scores[p]==='number' ? r.scores[p] : '';
+      if(typeof v === 'number') total += v * ROUND_WEIGHTS[i];
+      return `<td><input type="number" min="0" max="100" class="score-input" data-round="${i}" data-player="${p}" value="${v}"></td>`;
+    }).join('');
+    return `<tr><td><strong>${p}</strong></td>${cells}<td class="total-cell" data-total-for="${p}">${total}</td></tr>`;
+  }).join('');
+  return `
+    <table>
+      <tr><th></th>${cityHeaders}<th>Total</th></tr>
+      ${playerRows}
+    </table>`;
+}
+function saveDay(){
+  const date = document.getElementById('entry-date').value;
+  if(!date){ document.getElementById('entry-msg').textContent = 'Pick a date first.'; return; }
+  const rounds = [0,1,2,3,4].map(i=>{
+    const city = document.querySelector(`.city-input[data-round="${i}"]`).value.trim();
+    const scores = {};
+    state.players.forEach(p=>{
+      const el = document.querySelector(`.score-input[data-round="${i}"][data-player="${p}"]`);
+      const v = el.value;
+      if(v!=='' && !isNaN(v)) scores[p] = Math.max(0,Math.min(100, parseFloat(v)));
+    });
+    return {city, scores};
+  });
+  if(editingDayId){
+    const d = state.days.find(x=>x.id===editingDayId);
+    d.date = date; d.rounds = rounds;
+    editingDayId = null;
+  } else {
+    state.days.push({id: 'd'+Date.now()+Math.floor(Math.random()*1000), date, rounds});
+  }
+  render();
+}
+
+function viewPlayers(){
+  const players = state.players;
+  return `
+  <h2>Player Profile</h2>
+  <select id="player-select">${players.map(p=>`<option>${p}</option>`).join('')}</select>
+  <div id="player-body">${renderPlayerBody(players[0])}</div>
+  `;
+}
+function renderPlayerBody(player){
+  if(!player) return '<p>Add a player first.</p>';
+  const totals = state.days.map(d=>dayTotal(d,player));
+  const sum = totals.reduce((a,b)=>a+b,0);
+  const played = state.days.filter(d=>d.rounds.some(r=>typeof r.scores[player]==='number')).length;
+  const avg = played? sum/played : 0;
+  const roundRaw = [0,1,2,3,4].map(i=>{
+    const vals = state.days.map(d=>d.rounds[i]?.scores[player]).filter(v=>typeof v==='number');
+    return vals.length ? vals.reduce((a,b)=>a+b,0)/vals.length : null;
+  });
+  let best=null, worst=null;
+  state.days.forEach(d=>d.rounds.forEach(r=>{
+    const v = r.scores[player];
+    if(typeof v!=='number' || !r.city) return;
+    if(!best || v>best.score) best={city:r.city, score:v};
+    if(!worst || v<worst.score) worst={city:r.city, score:v};
+  }));
+  return `
+    <p>Season total: <strong>${sum.toFixed(0)}</strong> | Days played: ${played} | Avg/day: ${avg.toFixed(1)}</p>
+    <p>Best city: ${best?`${best.city} (${best.score})`:'—'} | Roughest city: ${worst?`${worst.city} (${worst.score})`:'—'}</p>
+    <p>Best day: ${totals.length?Math.max(...totals).toFixed(0):'—'} | Worst day: ${totals.length?Math.min(...totals).toFixed(0):'—'}</p>
+    <table>
+      <tr>${[1,2,3,4,5].map(n=>`<th>R${n} (x${ROUND_WEIGHTS[n-1]})</th>`).join('')}</tr>
+      <tr>${roundRaw.map(v=>`<td>${v===null?'—':v.toFixed(1)}</td>`).join('')}</tr>
+    </table>
+  `;
+}
+
+function viewCities(){
+  const cities = cityStats();
+  if(cities.length===0) return `<h2>Cities</h2><p>No cities logged yet.</p>`;
+  return `
+  <h2>Cities</h2>
+  <p class="small">Sorted hardest to easiest by average score.</p>
+  <table>
+    <tr><th>City</th><th>Avg Score</th><th>Top Guesser</th><th>Worst Guesser</th></tr>
+    ${cities.map(c=>`
+      <tr>
+        <td>${c.city}</td>
+        <td>${c.avg.toFixed(1)}</td>
+        <td>${c.best ? `${c.best.player} (${c.best.score})` : '—'}</td>
+        <td>${c.worst ? `${c.worst.player} (${c.worst.score})` : '—'}</td>
+      </tr>`).join('')}
+  </table>`;
+}
+
+function viewH2H(){
+  const players = state.players;
+  const a = document.getElementById('h2h-a')?.value || players[0];
+  const b = document.getElementById('h2h-b')?.value || players[1] || players[0];
+  const rows = state.days.map(d=>({date:d.date, a:dayTotal(d,a), b:dayTotal(d,b)}));
+  const aWins = rows.filter(r=>r.a>r.b).length;
+  const bWins = rows.filter(r=>r.b>r.a).length;
+  const ties = rows.filter(r=>r.a===r.b).length;
+  const aTotal = rows.reduce((s,r)=>s+r.a,0), bTotal = rows.reduce((s,r)=>s+r.b,0);
+  return `
+  <h2>Compare Players</h2>
+  Player A: <select id="h2h-a">${players.map(p=>`<option ${p===a?'selected':''}>${p}</option>`).join('')}</select>
+  Player B: <select id="h2h-b">${players.map(p=>`<option ${p===b?'selected':''}>${p}</option>`).join('')}</select>
+  <p>${a} wins: ${aWins} | ${b} wins: ${bWins} | Ties: ${ties}</p>
+  <p>Season totals: ${a} ${aTotal.toFixed(0)} — ${bTotal.toFixed(0)} ${b}</p>
+  ${rows.length===0 ? '<p class="small">No days to compare yet.</p>' : `
+  <table>
+    <tr><th>Date</th><th>${a}</th><th>${b}</th><th>Edge</th></tr>
+    ${rows.map(r=>`<tr><td>${r.date}</td><td>${r.a.toFixed(0)}</td><td>${r.b.toFixed(0)}</td><td>${r.a===r.b?'tie':(r.a>r.b?a:b)}</td></tr>`).join('')}
+  </table>`}
+  `;
+}
+
+function viewSettings(){
+  return `
+  <h2>Settings</h2>
+  <p class="small">Data autosaves to this browser (localStorage), so it'll still be here next time you open the page on this device/browser. Export gives you a portable backup — use it to move data to another device or browser.</p>
+  <h2>Roster</h2>
+  ${state.players.map((p,i)=>`
+    <div>
+      <input type="text" value="${p}" data-rename="${i}">
+      <button data-removeplayer="${p}">Remove</button>
+    </div>`).join('')}
+  <p>
+    <input type="text" id="new-player-name" placeholder="New player name">
+    <button id="add-player">Add Player</button>
+  </p>
+  <h2>Backup</h2>
+  <button id="export-btn">Export Data (.json)</button>
+  <label>Import: <input type="file" id="import-file" accept=".json"></label>
+  `;
+}
+
+function attachHandlers(){
+  if(activeTab==='entry'){
+    document.getElementById('entry-rounds').innerHTML = roundsFormHTML(editingDayId ? state.days.find(d=>d.id===editingDayId).rounds : null);
+    if(editingDayId){
+      document.getElementById('entry-date').value = state.days.find(d=>d.id===editingDayId).date;
+    }
+    document.getElementById('save-day').onclick = saveDay;
+    document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>{ editingDayId=b.dataset.edit; render(); });
+    document.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>{
+      if(confirm("Delete this day's results?")){ state.days = state.days.filter(d=>d.id!==b.dataset.delete); render(); }
+    });
+  }
+  if(activeTab==='players'){
+    const sel = document.getElementById('player-select');
+    if(sel) sel.onchange = ()=>{ document.getElementById('player-body').innerHTML = renderPlayerBody(sel.value); };
+  }
+  if(activeTab==='h2h'){
+    const s1 = document.getElementById('h2h-a'), s2 = document.getElementById('h2h-b');
+    if(s1) s1.onchange = render;
+    if(s2) s2.onchange = render;
+  }
+  if(activeTab==='settings'){
+    const addBtn = document.getElementById('add-player');
+    if(addBtn) addBtn.onclick = ()=>{
+      const input = document.getElementById('new-player-name');
+      const name = input.value.trim();
+      if(name && !state.players.includes(name)){ state.players.push(name); render(); }
+    };
+    document.querySelectorAll('[data-removeplayer]').forEach(b=>b.onclick=()=>{
+      const name = b.dataset.removeplayer;
+      if(confirm(`Remove ${name} from the roster?`)){ state.players = state.players.filter(p=>p!==name); render(); }
+    });
+    document.querySelectorAll('[data-rename]').forEach(inp=>inp.onchange=(e)=>{
+      const idx = parseInt(inp.dataset.rename);
+      const newName = e.target.value.trim();
+      if(newName) renamePlayer(state.players[idx], newName);
+    });
+    document.getElementById('export-btn').onclick = exportData;
+    document.getElementById('import-file').onchange = importData;
+    document.getElementById('reset-btn').onclick = ()=>{
+      if(confirm('This clears everything. Export a backup first if you want to keep it. Continue?')){
+        state = {players:['Player 1','Player 2','Player 3','Player 4','Player 5','Player 6'], days:[]};
+        try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
+        render();
+      }
+    };
+  }
+}
+function renamePlayer(oldName, newName){
+  state.players = state.players.map(p=>p===oldName?newName:p);
+  state.days.forEach(d=> d.rounds.forEach(r=>{
+    if(oldName in r.scores){ r.scores[newName] = r.scores[oldName]; delete r.scores[oldName]; }
+  }));
+  render();
+}
+function exportData(){
+  const blob = new Blob([JSON.stringify(state, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `map-tap-stats-${new Date().toISOString().slice(0,10)}.json`;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+function importData(e){
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev)=>{
+    try{
+      const parsed = JSON.parse(ev.target.result);
+      if(parsed && Array.isArray(parsed.players) && Array.isArray(parsed.days)){
+        state = parsed; render();
+      } else {
+        alert("That file doesn't look like a valid export.");
+      }
+    }catch(err){ alert('Could not read that file: '+err.message); }
+  };
+  reader.readAsText(file);
+}
+
+render();
+</script>
+</body>
+</html>
