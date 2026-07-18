@@ -61,7 +61,7 @@ let state = savedLocally || {
 
 // If nothing was saved in this browser yet, try loading the published snapshot
 if(!savedLocally){
-  fetch('data.json')
+  fetch('data.json?t=' + Date.now())
     .then(r => r.json())
     .then(data => {
       if(data && Array.isArray(data.players) && Array.isArray(data.days)){
