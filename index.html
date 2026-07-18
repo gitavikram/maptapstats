@@ -74,8 +74,8 @@ if(!savedLocally){
 
 const TABS = [
   {id:'standings', label:'Standings'},
+  {id:'players', label:'View Scores'},
   {id:'entry', label:'Add Results'},
-  {id:'players', label:'Players'},
   {id:'cities', label:'Cities'},
   // {id:'h2h', label:'Compare Players'},
   {id:'settings', label:'Settings'},
@@ -239,7 +239,7 @@ function saveDay(){
 function viewPlayers(){
   const players = state.players;
   return `
-  <h2>Player Profile</h2>
+  <h2>View Scores</h2>
   <select id="player-select">${players.map(p=>`<option>${p}</option>`).join('')}</select>
   <div id="player-body">${renderPlayerBody(players[0])}</div>
   `;
