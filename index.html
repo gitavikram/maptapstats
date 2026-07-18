@@ -32,7 +32,7 @@
 <div id="content"></div>
 <hr>
 <footer>
-  <p class="small">Seeing out of date scores? Try this button.</p>
+  <p class="small">Seeing out of date scores? Try this button. Not saying it's gonna work, but try it. And ignore the warning that pops up</p>
   <button id="refresh-btn">Refresh Scores</button>
 </footer>
 
@@ -424,7 +424,7 @@ function importData(e){
       if(parsed && Array.isArray(parsed.players) && Array.isArray(parsed.days)){
         state = parsed; render();
       } else {
-        alert("That file doesn't look like a valid export.");
+        alert("File invalid");
       }
     }catch(err){ alert('Could not read that file: '+err.message); }
   };
@@ -432,7 +432,7 @@ function importData(e){
 }
 
 function refreshFromPublished(){
-  if(!confirm('This will discard anything saved in this browser and reload the latest published data. Continue?')){
+  if(!confirm('Clear localstorage and load data.json?')){
     return;
   }
   try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
