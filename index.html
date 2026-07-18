@@ -53,10 +53,24 @@ function saveToStorage(){
   catch(e){ console.warn('Could not save data:', e); }
 }
 
-let state = loadFromStorage() || {
+const savedLocally = loadFromStorage();
+let state = savedLocally || {
   players: ['Player 1','Player 2','Player 3','Player 4','Player 5','Player 6'],
   days: []
 };
+
+// If nothing was saved in this browser yet, try loading the published snapshot
+if(!savedLocally){
+  fetch('data.json')
+    .then(r => r.json())
+    .then(data => {
+      if(data && Array.isArray(data.players) && Array.isArray(data.days)){
+        state = data;
+        render();
+      }
+    })
+    .catch(e => console.warn('No data.json found, or it failed to load:', e));
+}
 
 const TABS = [
   {id:'standings', label:'Standings'},
