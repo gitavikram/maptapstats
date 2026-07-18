@@ -101,7 +101,6 @@ function renderTabs(){
 }
 
 function render(){
-  saveToStorage();
   renderTabs();
   const c = document.getElementById('content');
   if(activeTab==='standings') c.innerHTML = viewStandings();
@@ -233,6 +232,7 @@ function saveDay(){
   } else {
     state.days.push({id: 'd'+Date.now()+Math.floor(Math.random()*1000), date, rounds});
   }
+  saveToStorage();
   render();
 }
 
@@ -367,11 +367,12 @@ function attachHandlers(){
     if(addBtn) addBtn.onclick = ()=>{
       const input = document.getElementById('new-player-name');
       const name = input.value.trim();
-      if(name && !state.players.includes(name)){ state.players.push(name); render(); }
+      if(name && !state.players.includes(name)){ state.players.push(name); 
+      saveToStorage(); render(); }
     };
     document.querySelectorAll('[data-removeplayer]').forEach(b=>b.onclick=()=>{
       const name = b.dataset.removeplayer;
-      if(confirm(`Remove ${name} from the roster?`)){ state.players = state.players.filter(p=>p!==name); render(); }
+      if(confirm(`Remove ${name} from the roster?`)){ state.players = state.players.filter(p=>p!==name); saveToStorage(); render(); }
     });
     document.querySelectorAll('[data-rename]').forEach(inp=>inp.onchange=(e)=>{
       const idx = parseInt(inp.dataset.rename);
@@ -384,6 +385,7 @@ function attachHandlers(){
       if(confirm('This clears everything. Export a backup first if you want to keep it. Continue?')){
         state = {players:['Player 1','Player 2','Player 3','Player 4','Player 5','Player 6'], days:[]};
         try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
+        saveToStorage(); 
         render();
       }
     };
@@ -394,6 +396,7 @@ function renamePlayer(oldName, newName){
   state.days.forEach(d=> d.rounds.forEach(r=>{
     if(oldName in r.scores){ r.scores[newName] = r.scores[oldName]; delete r.scores[oldName]; }
   }));
+  saveToStorage();
   render();
 }
 function exportData(){
