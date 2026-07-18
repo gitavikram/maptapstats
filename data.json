@@ -595,7 +595,8 @@
             "Daniel": 99,
             "Kelly": 98,
             "Taylor": 82,
-            "Joel": 100
+            "Joel": 100,
+            "Daphne": 87
           }
         },
         {
@@ -605,7 +606,8 @@
             "Daniel": 98,
             "Kelly": 96,
             "Taylor": 92,
-            "Joel": 99
+            "Joel": 99,
+            "Daphne": 88
           }
         },
         {
@@ -615,7 +617,8 @@
             "Daniel": 80,
             "Kelly": 80,
             "Taylor": 77,
-            "Joel": 80
+            "Joel": 80,
+            "Daphne": 64
           }
         },
         {
@@ -625,7 +628,8 @@
             "Daniel": 92,
             "Kelly": 86,
             "Taylor": 82,
-            "Joel": 88
+            "Joel": 88,
+            "Daphne": 95
           }
         },
         {
@@ -635,7 +639,8 @@
             "Daniel": 74,
             "Kelly": 80,
             "Taylor": 80,
-            "Joel": 80
+            "Joel": 80,
+            "Daphne": 87
           }
         }
       ]
