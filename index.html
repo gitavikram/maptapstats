@@ -26,7 +26,7 @@
 <body>
 
 <h1>Trivia Players Against Drunk Driving - Map Tap Stats</h1>
-<p class="small">If anyone has feedback or requests for updates pls just text me bc idk how to make a submission form -- GV <3</p>
+<p class="small">If anyone has requests for updates pls just text me bc idk how to make a submission form <3</p>
 
 <div class="tabs" id="tabs"></div>
 <div id="content"></div>
@@ -80,7 +80,11 @@ const TABS = [
   // {id:'h2h', label:'Compare Players'},
   {id:'settings', label:'Settings'},
 ];
-let activeTab = 'standings';
+//Stay on the active tab upon refresh
+const validTabIds = TABS.map(t => t.id);
+const hashTab = window.location.hash.replace('#', '');
+let activeTab = validTabIds.includes(hashTab) ? hashTab : 'standings';
+
 let editingDayId = null;
 
 function renderTabs(){
@@ -88,7 +92,11 @@ function renderTabs(){
     `<button data-tab="${t.id}" class="${t.id===activeTab?'active':''}">${t.label}</button>`
   ).join('');
   document.querySelectorAll('#tabs button').forEach(b=>{
-    b.onclick = ()=>{ activeTab = b.dataset.tab; render(); };
+    b.onclick = ()=>{
+      activeTab = b.dataset.tab;
+      window.location.hash = activeTab;
+      render();
+    };
   });
 }
 
@@ -167,6 +175,7 @@ function viewStandings(){
 function viewEntry(){
   return `
   <h2>Add Results</h2>
+  <p clas="small"> It'll default to a blank form. To view today's results, go to History > select day > Edit</p>
   <p>Date: <input type="date" id="entry-date" value="${new Date().toISOString().slice(0,10)}"></p>
   <div id="entry-rounds"></div>
   <button id="save-day">Save Day</button>
