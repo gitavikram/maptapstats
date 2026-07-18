@@ -254,8 +254,8 @@ function renderPlayerBody(player){
   }));
   return `
     <p>Season total: <strong>${sum.toFixed(0)}</strong> | Days played: ${played} | Avg/day: ${avg.toFixed(1)}</p>
-    <p>Best city: ${best?`${best.city} (${best.score})`:'—'} | Roughest city: ${worst?`${worst.city} (${worst.score})`:'—'}</p>
-    <p>Best day: ${totals.length?Math.max(...totals).toFixed(0):'—'} | Worst day: ${totals.length?Math.min(...totals).toFixed(0):'—'}</p>
+    <p>Best city: ${best?`${best.city} (${best.score})`:'—'} | Worst city: ${worst?`${worst.city} (${worst.score})`:'—'}</p>
+    <p>Best Score: ${totals.length?Math.max(...totals).toFixed(0):'—'} | Worst Score: ${totals.length?Math.min(...totals).toFixed(0):'—'}</p>
     <table>
       <tr>${[1,2,3,4,5].map(n=>`<th>R${n} (x${ROUND_WEIGHTS[n-1]})</th>`).join('')}</tr>
       <tr>${roundRaw.map(v=>`<td>${v===null?'—':v.toFixed(1)}</td>`).join('')}</tr>
