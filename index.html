@@ -30,6 +30,11 @@
 
 <div class="tabs" id="tabs"></div>
 <div id="content"></div>
+<hr>
+<footer>
+  <p class="small">Seeing out of date scores? Try this button.</p>
+  <button id="refresh-btn">Refresh Scores</button>
+</footer>
 
 <script>
 const ROUND_WEIGHTS = [1,1,2,3,3];
@@ -320,6 +325,7 @@ function viewH2H(){
   `;
 }
 
+//Settings Page
 function viewSettings(){
   return `
   <h2>Settings</h2>
@@ -425,6 +431,25 @@ function importData(e){
   reader.readAsText(file);
 }
 
+function refreshFromPublished(){
+  if(!confirm('This will discard anything saved in this browser and reload the latest published data. Continue?')){
+    return;
+  }
+  try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
+  fetch('data.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      if(data && Array.isArray(data.players) && Array.isArray(data.days)){
+        state = data;
+        render();
+      } else {
+        alert('Could not load data.json — it may be missing or malformed.');
+      }
+    })
+    .catch(e => alert('Failed to fetch data.json: ' + e.message));
+}
+
+document.getElementById('refresh-btn').onclick = refreshFromPublished;
 render();
 </script>
 </body>
