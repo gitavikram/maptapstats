@@ -263,8 +263,6 @@ function renderPlayerBody(player){
     .slice()
     .sort((a,b)=>b.date.localeCompare(a.date));
   return `
-    <p>Season total: <strong>${sum.toFixed(0)}</strong> | Days played: ${played} | Avg/day: ${avg.toFixed(1)}</p>
-    <p>Best city: ${best?`${best.city} (${best.score})`:'—'} | Worst city: ${worst?`${worst.city} (${worst.score})`:'—'}</p>
     <p>Best Score: ${totals.length?Math.max(...totals).toFixed(0):'—'} | Worst Score: ${totals.length?Math.min(...totals).toFixed(0):'—'}</p>
     <table>
       <tr><th>Date</th>${[1,2,3,4,5].map(n=>`<th>Round ${n}</th>`).join('')}<th>Day Total</th></tr>
