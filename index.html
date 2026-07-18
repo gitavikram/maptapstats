@@ -26,7 +26,7 @@
 <body>
 
 <h1>Trivia Players Against Drunk Driving - Map Tap Stats</h1>
-<p class="small">Scoring: R1 x1, R2 x1, R3 x2, R4 x3, R5 x3 (max 1000/day).</p>
+<p class="small">If anyone has feedback or requests for updates pls just text me bc idk how to make a submission form -- GV <3</p>
 
 <div class="tabs" id="tabs"></div>
 <div id="content"></div>
@@ -235,16 +235,13 @@ function viewPlayers(){
   <div id="player-body">${renderPlayerBody(players[0])}</div>
   `;
 }
+
 function renderPlayerBody(player){
   if(!player) return '<p>Add a player first.</p>';
   const totals = state.days.map(d=>dayTotal(d,player));
   const sum = totals.reduce((a,b)=>a+b,0);
   const played = state.days.filter(d=>d.rounds.some(r=>typeof r.scores[player]==='number')).length;
   const avg = played? sum/played : 0;
-  const roundRaw = [0,1,2,3,4].map(i=>{
-    const vals = state.days.map(d=>d.rounds[i]?.scores[player]).filter(v=>typeof v==='number');
-    return vals.length ? vals.reduce((a,b)=>a+b,0)/vals.length : null;
-  });
   let best=null, worst=null;
   state.days.forEach(d=>d.rounds.forEach(r=>{
     const v = r.scores[player];
@@ -252,13 +249,25 @@ function renderPlayerBody(player){
     if(!best || v>best.score) best={city:r.city, score:v};
     if(!worst || v<worst.score) worst={city:r.city, score:v};
   }));
+  const playedDays = state.days
+    .filter(d=>d.rounds.some(r=>typeof r.scores[player]==='number'))
+    .slice()
+    .sort((a,b)=>b.date.localeCompare(a.date));
   return `
     <p>Season total: <strong>${sum.toFixed(0)}</strong> | Days played: ${played} | Avg/day: ${avg.toFixed(1)}</p>
     <p>Best city: ${best?`${best.city} (${best.score})`:'—'} | Worst city: ${worst?`${worst.city} (${worst.score})`:'—'}</p>
     <p>Best Score: ${totals.length?Math.max(...totals).toFixed(0):'—'} | Worst Score: ${totals.length?Math.min(...totals).toFixed(0):'—'}</p>
     <table>
-      <tr>${[1,2,3,4,5].map(n=>`<th>R${n} (x${ROUND_WEIGHTS[n-1]})</th>`).join('')}</tr>
-      <tr>${roundRaw.map(v=>`<td>${v===null?'—':v.toFixed(1)}</td>`).join('')}</tr>
+      <tr><th>Date</th>${[1,2,3,4,5].map(n=>`<th>Round ${n}</th>`).join('')}<th>Day Total</th></tr>
+      ${playedDays.map(d=>{
+        const cells = d.rounds.map(r=>{
+          const v = r.scores[player];
+          const scoreText = typeof v==='number' ? `<strong style="font-size:1.3em;">${v}</strong>` : '—';
+          const cityText = r.city ? `<br><span class="small">${r.city}</span>` : '';
+          return `<td>${scoreText}${cityText}</td>`;
+        }).join('');
+        return `<tr><td>${d.date}</td>${cells}<td>${dayTotal(d,player).toFixed(0)}</td></tr>`;
+      }).join('')}
     </table>
   `;
 }
