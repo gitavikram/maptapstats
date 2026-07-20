@@ -733,31 +733,51 @@
         {
           "city": "El Paso, Texas, USA",
           "scores": {
-            "Gita": 93
+            "Gita": 93,
+            "Daphne": 99,
+            "Daniel": 84,
+            "Taylor": 80,
+            "Joel": 97
           }
         },
         {
           "city": "Namur, Belgium",
           "scores": {
-            "Gita": 94
+            "Gita": 94,
+            "Daphne": 90,
+            "Daniel": 97,
+            "Taylor": 65,
+            "Joel": 97
           }
         },
         {
           "city": "Brno, Czech Republic",
           "scores": {
-            "Gita": 99
+            "Gita": 99,
+            "Daphne": 76,
+            "Daniel": 91,
+            "Taylor": 78,
+            "Joel": 96
           }
         },
         {
           "city": "Bogota,Colombia",
           "scores": {
-            "Gita": 100
+            "Gita": 100,
+            "Daphne": 66,
+            "Daniel": 95,
+            "Taylor": 61,
+            "Joel": 99
           }
         },
         {
           "city": "Grytviken, South Georgia, United Kingdom Overseas Territory",
           "scores": {
-            "Gita": 8
+            "Gita": 8,
+            "Daphne": 3,
+            "Daniel": 63,
+            "Taylor": 5,
+            "Joel": 6
           }
         }
       ]
