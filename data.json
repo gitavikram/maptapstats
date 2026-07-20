@@ -664,8 +664,12 @@
           "scores": {
             "Gita": 95,
             "Daniel": 96,
+            "Kelly": 93,
             "Olivia": 98,
-            "Taylor": 86
+            "Brandon": 96,
+            "Taylor": 86,
+            "Joel": 91,
+            "Daphne": 80
           }
         },
         {
@@ -673,8 +677,12 @@
           "scores": {
             "Gita": 100,
             "Daniel": 100,
+            "Kelly": 98,
             "Olivia": 100,
-            "Taylor": 99
+            "Brandon": 100,
+            "Taylor": 99,
+            "Joel": 100,
+            "Daphne": 98
           }
         },
         {
@@ -682,8 +690,12 @@
           "scores": {
             "Gita": 99,
             "Daniel": 99,
+            "Kelly": 97,
             "Olivia": 96,
-            "Taylor": 90
+            "Brandon": 95,
+            "Taylor": 90,
+            "Joel": 98,
+            "Daphne": 97
           }
         },
         {
@@ -691,8 +703,12 @@
           "scores": {
             "Gita": 97,
             "Daniel": 96,
+            "Kelly": 97,
             "Olivia": 66,
-            "Taylor": 86
+            "Brandon": 28,
+            "Taylor": 86,
+            "Joel": 98,
+            "Daphne": 33
           }
         },
         {
@@ -700,8 +716,48 @@
           "scores": {
             "Gita": 80,
             "Daniel": 80,
+            "Kelly": 80,
             "Olivia": 90,
-            "Taylor": 78
+            "Brandon": 80,
+            "Taylor": 78,
+            "Joel": 85,
+            "Daphne": 44
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1784551960687984",
+      "date": "2026-07-20",
+      "rounds": [
+        {
+          "city": "El Paso, Texas, USA",
+          "scores": {
+            "Gita": 93
+          }
+        },
+        {
+          "city": "Namur, Belgium",
+          "scores": {
+            "Gita": 94
+          }
+        },
+        {
+          "city": "Brno, Czech Republic",
+          "scores": {
+            "Gita": 99
+          }
+        },
+        {
+          "city": "Bogota,Colombia",
+          "scores": {
+            "Gita": 100
+          }
+        },
+        {
+          "city": "Grytviken, South Georgia, United Kingdom Overseas Territory",
+          "scores": {
+            "Gita": 8
           }
         }
       ]
