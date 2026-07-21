@@ -734,50 +734,106 @@
           "city": "El Paso, Texas, USA",
           "scores": {
             "Gita": 93,
-            "Daphne": 99,
             "Daniel": 84,
+            "Kelly": 90,
             "Taylor": 80,
-            "Joel": 97
+            "Joel": 97,
+            "Daphne": 99
           }
         },
         {
           "city": "Namur, Belgium",
           "scores": {
             "Gita": 94,
-            "Daphne": 90,
             "Daniel": 97,
+            "Kelly": 98,
             "Taylor": 65,
-            "Joel": 97
+            "Joel": 97,
+            "Daphne": 90
           }
         },
         {
           "city": "Brno, Czech Republic",
           "scores": {
             "Gita": 99,
-            "Daphne": 76,
             "Daniel": 91,
+            "Kelly": 78,
             "Taylor": 78,
-            "Joel": 96
+            "Joel": 96,
+            "Daphne": 76
           }
         },
         {
           "city": "Bogota,Colombia",
           "scores": {
             "Gita": 100,
-            "Daphne": 66,
             "Daniel": 95,
+            "Kelly": 97,
             "Taylor": 61,
-            "Joel": 99
+            "Joel": 99,
+            "Daphne": 66
           }
         },
         {
           "city": "Grytviken, South Georgia, United Kingdom Overseas Territory",
           "scores": {
             "Gita": 8,
-            "Daphne": 3,
             "Daniel": 63,
+            "Kelly": 7,
             "Taylor": 5,
-            "Joel": 6
+            "Joel": 6,
+            "Daphne": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1784637607536112",
+      "date": "2026-07-21",
+      "rounds": [
+        {
+          "city": "Cork, Ireland",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 99,
+            "Kelly": 97,
+            "Olivia": 97
+          }
+        },
+        {
+          "city": "Colombo, Sri Lanka",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 64,
+            "Kelly": 97,
+            "Olivia": 51
+          }
+        },
+        {
+          "city": "Edmonton, Alberta, Canada",
+          "scores": {
+            "Gita": 86,
+            "Daniel": 100,
+            "Kelly": 78,
+            "Olivia": 66
+          }
+        },
+        {
+          "city": "Irkutsk, Irkutsk Oblast, Russia",
+          "scores": {
+            "Gita": 78,
+            "Daniel": 58,
+            "Kelly": 66,
+            "Olivia": 78
+          }
+        },
+        {
+          "city": "Fort-de-France, Martinique, France",
+          "scores": {
+            "Gita": 22,
+            "Daniel": 23,
+            "Kelly": 22,
+            "Olivia": 24
           }
         }
       ]

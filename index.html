@@ -89,6 +89,8 @@ const TABS = [
 const validTabIds = TABS.map(t => t.id);
 const hashTab = window.location.hash.replace('#', '');
 let activeTab = validTabIds.includes(hashTab) ? hashTab : 'standings';
+let playersSubView = 'profile'; // 'profile' or 'byday'
+let selectedDayId = null;
 
 let editingDayId = null;
 
@@ -117,6 +119,7 @@ function render(){
   attachHandlers();
 }
 
+//Score Calculations
 function dayTotal(day, player){
   let total = 0;
   day.rounds.forEach((r,i)=>{
@@ -157,6 +160,7 @@ function cityStats(){
   }).sort((a,b)=>a.avg-b.avg);
 }
 
+//Page: Standings
 function viewStandings(){
   const stats = seasonStats();
   if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
@@ -176,10 +180,13 @@ function viewStandings(){
   </table>`;
 }
 
+//Page: Add Results
 function viewEntry(){
   return `
   <h2>Add Results</h2>
-  <p clas="small"> It'll default to a blank form. To view today's results, go to History > select day > Edit</p>
+  <p class="small">Don't bother trying to add results here because they'll only update your local browser. The way it works is that I have to add results here, 
+    download the JSON, and then commit it to my GitHub repo to update the standings table. This is how it has to be 
+    for my budget of $0</p>
   <p>Date: <input type="date" id="entry-date" value="${new Date().toISOString().slice(0,10)}"></p>
   <div id="entry-rounds"></div>
   <button id="save-day">Save Day</button>
@@ -241,12 +248,50 @@ function saveDay(){
   render();
 }
 
+//Page: View Scores
 function viewPlayers(){
+  return `
+  <h2>Players</h2>
+  <div class="row" style="margin-bottom:12px;">
+    <button data-subview="profile" class="${playersSubView==='profile'?'active':''}">By Player</button>
+    <button data-subview="byday" class="${playersSubView==='byday'?'active':''}">By Day</button>
+  </div>
+  <div id="players-subview-body">${playersSubView==='profile' ? profileSubView() : byDaySubView()}</div>
+  `;
+}
+
+function profileSubView(){
   const players = state.players;
   return `
-  <h2>View Scores</h2>
-  <select id="player-select">${players.map(p=>`<option>${p}</option>`).join('')}</select>
-  <div id="player-body">${renderPlayerBody(players[0])}</div>
+    <select id="player-select">${players.map(p=>`<option>${p}</option>`).join('')}</select>
+    <div id="player-body">${renderPlayerBody(players[0])}</div>
+  `;
+}
+//Daily Score View
+function byDaySubView(){
+  if(state.days.length===0) return '<p>No days logged yet.</p>';
+  const sortedDays = state.days.slice().sort((a,b)=>b.date.localeCompare(a.date));
+  const currentDayId = (selectedDayId && state.days.find(d=>d.id===selectedDayId)) ? selectedDayId : sortedDays[0].id;
+  return `
+    <select id="day-select">${sortedDays.map(d=>`<option value="${d.id}" ${d.id===currentDayId?'selected':''}>${d.date}</option>`).join('')}</select>
+    <div id="day-body">${renderDayBody(currentDayId)}</div>
+  `;
+}
+
+function renderDayBody(dayId){
+  const day = state.days.find(d=>d.id===dayId);
+  if(!day) return '<p>Day not found.</p>';
+  return `
+    <table>
+      <tr><th>Player</th>${day.rounds.map((r,i)=>`<th>Round ${i+1}<br><span class="small">${r.city||'—'}</span></th>`).join('')}<th>Day Total</th></tr>
+      ${state.players.map(p=>{
+        const cells = day.rounds.map(r=>{
+          const v = r.scores[p];
+          return `<td>${typeof v==='number' ? v : '—'}</td>`;
+        }).join('');
+        return `<tr><td><strong>${p}</strong></td>${cells}<td>${dayTotal(day,p).toFixed(0)}</td></tr>`;
+      }).join('')}
+    </table>
   `;
 }
 
@@ -359,10 +404,19 @@ function attachHandlers(){
       if(confirm("Delete this day's results?")){ state.days = state.days.filter(d=>d.id!==b.dataset.delete); render(); }
     });
   }
-  if(activeTab==='players'){
-    const sel = document.getElementById('player-select');
-    if(sel) sel.onchange = ()=>{ document.getElementById('player-body').innerHTML = renderPlayerBody(sel.value); };
-  }
+if(activeTab==='players'){
+  document.querySelectorAll('[data-subview]').forEach(b=>b.onclick=()=>{
+    playersSubView = b.dataset.subview;
+    render();
+  });
+  const sel = document.getElementById('player-select');
+  if(sel) sel.onchange = ()=>{ document.getElementById('player-body').innerHTML = renderPlayerBody(sel.value); };
+  const daySel = document.getElementById('day-select');
+  if(daySel) daySel.onchange = ()=>{
+    selectedDayId = daySel.value;
+    document.getElementById('day-body').innerHTML = renderDayBody(selectedDayId);
+  };
+}
   if(activeTab==='h2h'){
     const s1 = document.getElementById('h2h-a'), s2 = document.getElementById('h2h-b');
     if(s1) s1.onchange = render;
