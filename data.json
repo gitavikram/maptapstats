@@ -798,9 +798,10 @@
             "Daniel": 99,
             "Kelly": 97,
             "Olivia": 97,
+            "Brandon": 93,
             "Taylor": 91,
-            "Daphne": 97,
-            "Joel": 96
+            "Joel": 96,
+            "Daphne": 97
           }
         },
         {
@@ -810,9 +811,10 @@
             "Daniel": 64,
             "Kelly": 97,
             "Olivia": 51,
+            "Brandon": 96,
             "Taylor": 51,
-            "Daphne": 42,
-            "Joel": 98
+            "Joel": 98,
+            "Daphne": 42
           }
         },
         {
@@ -822,9 +824,10 @@
             "Daniel": 100,
             "Kelly": 78,
             "Olivia": 66,
+            "Brandon": 84,
             "Taylor": 80,
-            "Daphne": 97,
-            "Joel": 84
+            "Joel": 84,
+            "Daphne": 97
           }
         },
         {
@@ -834,9 +837,10 @@
             "Daniel": 58,
             "Kelly": 66,
             "Olivia": 78,
+            "Brandon": 80,
             "Taylor": 80,
-            "Daphne": 84,
-            "Joel": 80
+            "Joel": 80,
+            "Daphne": 84
           }
         },
         {
@@ -846,9 +850,61 @@
             "Daniel": 23,
             "Kelly": 22,
             "Olivia": 24,
+            "Brandon": 23,
             "Taylor": 21,
-            "Daphne": 23,
-            "Joel": 32
+            "Joel": 32,
+            "Daphne": 23
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1784726954498593",
+      "date": "2026-07-22",
+      "rounds": [
+        {
+          "city": "Jerusalem",
+          "scores": {
+            "Gita": 90,
+            "Daniel": 99,
+            "Kelly": 100,
+            "Olivia": 92
+          }
+        },
+        {
+          "city": "Brussels, Belgium",
+          "scores": {
+            "Gita": 93,
+            "Daniel": 98,
+            "Kelly": 98,
+            "Olivia": 95
+          }
+        },
+        {
+          "city": "Oklahoma City, OK, USA",
+          "scores": {
+            "Gita": 89,
+            "Daniel": 100,
+            "Kelly": 95,
+            "Olivia": 91
+          }
+        },
+        {
+          "city": "Victoria, BC, Canada",
+          "scores": {
+            "Gita": 88,
+            "Daniel": 97,
+            "Kelly": 98,
+            "Olivia": 92
+          }
+        },
+        {
+          "city": "Medellin, Colombia",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 95,
+            "Kelly": 92,
+            "Olivia": 66
           }
         }
       ]
