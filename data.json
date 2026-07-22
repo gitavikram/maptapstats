@@ -868,7 +868,9 @@
             "Gita": 90,
             "Daniel": 99,
             "Kelly": 100,
-            "Olivia": 92
+            "Olivia": 92,
+            "Joel": 98,
+            "Taylor": 97
           }
         },
         {
@@ -877,7 +879,9 @@
             "Gita": 93,
             "Daniel": 98,
             "Kelly": 98,
-            "Olivia": 95
+            "Olivia": 95,
+            "Joel": 97,
+            "Taylor": 82
           }
         },
         {
@@ -886,7 +890,9 @@
             "Gita": 89,
             "Daniel": 100,
             "Kelly": 95,
-            "Olivia": 91
+            "Olivia": 91,
+            "Joel": 100,
+            "Taylor": 80
           }
         },
         {
@@ -895,7 +901,9 @@
             "Gita": 88,
             "Daniel": 97,
             "Kelly": 98,
-            "Olivia": 92
+            "Olivia": 92,
+            "Joel": 94,
+            "Taylor": 59
           }
         },
         {
@@ -904,7 +912,9 @@
             "Gita": 94,
             "Daniel": 95,
             "Kelly": 92,
-            "Olivia": 66
+            "Olivia": 66,
+            "Joel": 93,
+            "Taylor": 88
           }
         }
       ]
