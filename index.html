@@ -160,12 +160,33 @@ function cityStats(){
   }).sort((a,b)=>a.avg-b.avg);
 }
 
+//Calculate All Time Record
+function allTimeRecord(){
+  let record = null;
+  state.days.forEach(day=>{
+    state.players.forEach(p=>{
+      const total = dayTotal(day, p);
+      if(total > 0 && (!record || total > record.score)){
+        record = {player: p, score: total, date: day.date};
+      }
+    });
+  });
+  return record;
+}
+
 //Page: Standings
 function viewStandings(){
   const stats = seasonStats();
   if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
   return `
+
   <h2>Standings</h2>
+
+  <table>
+    <tr><th colspan="3">Current Record</th></tr>
+    <tr><td>${record ? record.player : '—'}</td><td>${record ? record.score.toFixed(0) : '—'}</td><td>${record ? record.date : '—'}</td></tr>
+  </table>;
+
   <p class="small"> Sorted by average daily score</p>
   <table>
     <tr><th>#</th><th>Player</th><th>Avg Score</th><th>Total Score</th><th>Days Played</th>
