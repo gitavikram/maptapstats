@@ -869,8 +869,9 @@
             "Daniel": 99,
             "Kelly": 100,
             "Olivia": 92,
+            "Taylor": 97,
             "Joel": 98,
-            "Taylor": 97
+            "Daphne": 67
           }
         },
         {
@@ -880,8 +881,9 @@
             "Daniel": 98,
             "Kelly": 98,
             "Olivia": 95,
+            "Taylor": 82,
             "Joel": 97,
-            "Taylor": 82
+            "Daphne": 90
           }
         },
         {
@@ -891,8 +893,9 @@
             "Daniel": 100,
             "Kelly": 95,
             "Olivia": 91,
+            "Taylor": 80,
             "Joel": 100,
-            "Taylor": 80
+            "Daphne": 93
           }
         },
         {
@@ -902,8 +905,9 @@
             "Daniel": 97,
             "Kelly": 98,
             "Olivia": 92,
+            "Taylor": 59,
             "Joel": 94,
-            "Taylor": 59
+            "Daphne": 52
           }
         },
         {
@@ -913,8 +917,70 @@
             "Daniel": 95,
             "Kelly": 92,
             "Olivia": 66,
+            "Taylor": 88,
             "Joel": 93,
-            "Taylor": 88
+            "Daphne": 56
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1784822848689713",
+      "date": "2026-07-23",
+      "rounds": [
+        {
+          "city": "Winnipeg, Manitoba, Canada",
+          "scores": {
+            "Gita": 92,
+            "Daniel": 93,
+            "Kelly": 97,
+            "Olivia": 69,
+            "Joel": 78,
+            "Daphne": 82
+          }
+        },
+        {
+          "city": "Jakarta, Indonesia",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 79,
+            "Olivia": 84,
+            "Joel": 100,
+            "Daphne": 47
+          }
+        },
+        {
+          "city": "Muscat, Oman",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 91,
+            "Kelly": 94,
+            "Olivia": 82,
+            "Joel": 96,
+            "Daphne": 63
+          }
+        },
+        {
+          "city": "Ponce, Puerto Rico",
+          "scores": {
+            "Gita": 77,
+            "Daniel": 77,
+            "Kelly": 99,
+            "Olivia": 77,
+            "Joel": 99,
+            "Daphne": 92
+          }
+        },
+        {
+          "city": "Punta Arenas, Chile",
+          "scores": {
+            "Gita": 66,
+            "Daniel": 74,
+            "Kelly": 78,
+            "Olivia": 65,
+            "Joel": 64,
+            "Daphne": 63
           }
         }
       ]
