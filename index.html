@@ -177,9 +177,9 @@ function allTimeRecord(){
 //Page: Standings
 function viewStandings(){
   const stats = seasonStats();
-  if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
+  if(state.days.length===0) return `<h2>Standings</h2><p>No results yet.</p>`;
+  const record = allTimeRecord();
   return `
-
   <h2>Standings</h2>
 
   <table>
