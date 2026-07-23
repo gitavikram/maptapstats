@@ -180,14 +180,12 @@ function viewStandings(){
   if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
   const record = allTimeRecord();
   return `
-
-  <h2>Standings</h2>
-
   <table>
     <tr><th colspan="3">Current Record</th></tr>
     <tr><td>${record ? record.player : '—'}</td><td>${record ? record.score.toFixed(0) : '—'}</td><td>${record ? record.date : '—'}</td></tr>
   </table>
 
+  <h2>Standings</h2>
   <p class="small"> Sorted by average daily score</p>
   <table>
     <tr><th>#</th><th>Player</th><th>Avg Score</th><th>Total Score</th><th>Days Played</th>
@@ -199,7 +197,7 @@ function viewStandings(){
         <td>${s.total.toFixed(0)}</td>
         <td>${s.played}</td>
       </tr>`).join('')}
-  </table>`;
+  </table>`
 }
 
 //Page: Add Results
