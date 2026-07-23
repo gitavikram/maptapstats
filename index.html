@@ -177,15 +177,16 @@ function allTimeRecord(){
 //Page: Standings
 function viewStandings(){
   const stats = seasonStats();
-  if(state.days.length===0) return `<h2>Standings</h2><p>No results yet.</p>`;
+  if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
   const record = allTimeRecord();
   return `
+
   <h2>Standings</h2>
 
   <table>
     <tr><th colspan="3">Current Record</th></tr>
     <tr><td>${record ? record.player : '—'}</td><td>${record ? record.score.toFixed(0) : '—'}</td><td>${record ? record.date : '—'}</td></tr>
-  </table>;
+  </table>
 
   <p class="small"> Sorted by average daily score</p>
   <table>
