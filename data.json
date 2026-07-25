@@ -979,6 +979,133 @@
           }
         }
       ]
+    },
+    {
+      "id": "d1784996924932577",
+      "date": "2026-07-24",
+      "rounds": [
+        {
+          "city": "Arlington, Virginia, USA",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 95,
+            "Kelly": 100,
+            "Olivia": 98,
+            "Taylor": 84,
+            "Joel": 98,
+            "Daphne": 89
+          }
+        },
+        {
+          "city": "Mount Fuji, Japan",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Olivia": 98,
+            "Taylor": 96,
+            "Joel": 98,
+            "Daphne": 47
+          }
+        },
+        {
+          "city": "Pristina, Kosovo",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 92,
+            "Kelly": 84,
+            "Olivia": 69,
+            "Taylor": 76,
+            "Joel": 93,
+            "Daphne": 90
+          }
+        },
+        {
+          "city": "Caracas, Venezuela",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 89,
+            "Kelly": 85,
+            "Olivia": 69,
+            "Taylor": 75,
+            "Joel": 94,
+            "Daphne": 36
+          }
+        },
+        {
+          "city": "Quito, Ecuador",
+          "scores": {
+            "Gita": 89,
+            "Daniel": 98,
+            "Kelly": 98,
+            "Olivia": 66,
+            "Taylor": 62,
+            "Joel": 88,
+            "Daphne": 71
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1784996978181346",
+      "date": "2026-07-25",
+      "rounds": [
+        {
+          "city": "Bordeaux Cathedral, Bordeaux, France",
+          "scores": {
+            "Gita": 91,
+            "Daniel": 94,
+            "Kelly": 95,
+            "Olivia": 93,
+            "Joel": 91,
+            "Daphne": 87
+          }
+        },
+        {
+          "city": "Tulsa, Oklahoma, USA",
+          "scores": {
+            "Gita": 92,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Olivia": 90,
+            "Joel": 100,
+            "Daphne": 84
+          }
+        },
+        {
+          "city": "Patna, Bihar, India",
+          "scores": {
+            "Gita": 89,
+            "Daniel": 84,
+            "Kelly": 87,
+            "Olivia": 80,
+            "Joel": 88,
+            "Daphne": 92
+          }
+        },
+        {
+          "city": "Mogadishu, Somalia",
+          "scores": {
+            "Gita": 81,
+            "Daniel": 42,
+            "Kelly": 87,
+            "Olivia": 69,
+            "Joel": 90,
+            "Daphne": 44
+          }
+        },
+        {
+          "city": "Luanda, Angola",
+          "scores": {
+            "Gita": 80,
+            "Daniel": 91,
+            "Kelly": 49,
+            "Olivia": 81,
+            "Joel": 95,
+            "Daphne": 65
+          }
+        }
+      ]
     }
   ]
 }
