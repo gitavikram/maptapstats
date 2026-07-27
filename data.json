@@ -1106,6 +1106,103 @@
           }
         }
       ]
+    },
+    {
+      "id": "d1785158653365118",
+      "date": "2026-07-26",
+      "rounds": [
+        {
+          "city": "Washington DC, USA",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 100,
+            "Kelly": 99,
+            "Olivia": 88,
+            "Joel": 100,
+            "Daphne": 82
+          }
+        },
+        {
+          "city": "St. Gallen, Switzerland",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 96,
+            "Kelly": 98,
+            "Olivia": 90,
+            "Joel": 98,
+            "Daphne": 85
+          }
+        },
+        {
+          "city": "The Hague, Netherlands",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 87,
+            "Kelly": 96,
+            "Olivia": 91,
+            "Joel": 99,
+            "Daphne": 91
+          }
+        },
+        {
+          "city": "Skopje, North Macedonia",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 90,
+            "Kelly": 80,
+            "Olivia": 44,
+            "Joel": 94,
+            "Daphne": 27
+          }
+        },
+        {
+          "city": "Monrovia, Liberia",
+          "scores": {
+            "Gita": 74,
+            "Daniel": 93,
+            "Kelly": 92,
+            "Olivia": 8,
+            "Joel": 99,
+            "Daphne": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1785158732931965",
+      "date": "2026-07-27",
+      "rounds": [
+        {
+          "city": "Inverness, Scotland, UK",
+          "scores": {
+            "Gita": 96
+          }
+        },
+        {
+          "city": "Toronto, Canada",
+          "scores": {
+            "Gita": 93
+          }
+        },
+        {
+          "city": "Ankara, Turkiye",
+          "scores": {
+            "Gita": 96
+          }
+        },
+        {
+          "city": "Lake Geneva, Wisconsin, USA",
+          "scores": {
+            "Gita": 96
+          }
+        },
+        {
+          "city": "Port Louis, Mauritius",
+          "scores": {
+            "Gita": 72
+          }
+        }
+      ]
     }
   ]
 }
