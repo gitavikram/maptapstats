@@ -1175,31 +1175,56 @@
         {
           "city": "Inverness, Scotland, UK",
           "scores": {
-            "Gita": 96
+            "Gita": 96,
+            "Kelly": 99,
+            "Olivia": 95,
+            "Joel": 92,
+            "Daphne": 88,
+            "Daniel": 97
           }
         },
         {
           "city": "Toronto, Canada",
           "scores": {
-            "Gita": 93
+            "Gita": 93,
+            "Kelly": 100,
+            "Olivia": 78,
+            "Joel": 100,
+            "Daphne": 80,
+            "Daniel": 100
           }
         },
         {
           "city": "Ankara, Turkiye",
           "scores": {
-            "Gita": 96
+            "Gita": 96,
+            "Kelly": 78,
+            "Olivia": 93,
+            "Joel": 96,
+            "Daphne": 69,
+            "Daniel": 98
           }
         },
         {
           "city": "Lake Geneva, Wisconsin, USA",
           "scores": {
-            "Gita": 96
+            "Gita": 96,
+            "Kelly": 96,
+            "Olivia": 97,
+            "Joel": 97,
+            "Daphne": 97,
+            "Daniel": 96
           }
         },
         {
           "city": "Port Louis, Mauritius",
           "scores": {
-            "Gita": 72
+            "Gita": 72,
+            "Kelly": 95,
+            "Olivia": 44,
+            "Joel": 95,
+            "Daphne": 45,
+            "Daniel": 100
           }
         }
       ]
