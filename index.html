@@ -186,7 +186,7 @@ function viewStandings(){
   <p class="small"> Top 5 daily scores of all time</p>
   <table>
     <tr><th>#</th><th>Player</th><th>Score</th><th>Date</th></tr>
-    ${top5.map(r=>`<tr><td>${i+1}</td><td>${r.player}</td><td>${r.score.toFixed(0)}</td><td>${r.date}</td></tr>`).join('')}
+    ${top5.map(r, i=>`<tr><td>${i+1}</td><td>${r.player}</td><td>${r.score.toFixed(0)}</td><td>${r.date}</td></tr>`).join('')}
   </table>
 
 
