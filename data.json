@@ -1228,6 +1228,62 @@
           }
         }
       ]
+    },
+    {
+      "id": "d1785260565306314",
+      "date": "2026-07-28",
+      "rounds": [
+        {
+          "city": "Madison, Wisconsin, USA",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 100,
+            "Kelly": 97,
+            "Joel": 97,
+            "Daphne": 99
+          }
+        },
+        {
+          "city": "Haarlem, Netherlands",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 98,
+            "Kelly": 96,
+            "Joel": 99,
+            "Daphne": 86
+          }
+        },
+        {
+          "city": "Porto Alegre, Brazil",
+          "scores": {
+            "Gita": 78,
+            "Daniel": 63,
+            "Kelly": 80,
+            "Joel": 73,
+            "Daphne": 44
+          }
+        },
+        {
+          "city": "Lima, Peru",
+          "scores": {
+            "Gita": 80,
+            "Daniel": 90,
+            "Kelly": 97,
+            "Joel": 80,
+            "Daphne": 95
+          }
+        },
+        {
+          "city": "Valparaiso, Chile",
+          "scores": {
+            "Gita": 89,
+            "Daniel": 92,
+            "Kelly": 80,
+            "Joel": 87,
+            "Daphne": 92
+          }
+        }
+      ]
     }
   ]
 }

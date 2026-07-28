@@ -161,33 +161,34 @@ function cityStats(){
 }
 
 //Calculate All Time Record
-function allTimeRecord(){
-  let record = null;
+function topScores(n=5){
+  const all = [];
   state.days.forEach(day=>{
     state.players.forEach(p=>{
       const total = dayTotal(day, p);
-      if(total > 0 && (!record || total > record.score)){
-        record = {player: p, score: total, date: day.date};
+      if(total > 0){
+        all.push({player: p, score: total, date: day.date});
       }
     });
   });
-  return record;
+  return all.sort((a,b)=>b.score-a.score).slice(0, n);
 }
 
 //Page: Standings
 function viewStandings(){
   const stats = seasonStats();
   if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
-  const record = allTimeRecord();
+  const top5 = topScores(5);
 
   //Current Record and Standings Tables
   return `
   <h2>Current Record</h2>
-  <p class="small"> Top daily score of all time</p>
+  <p class="small"> Top daily scores of all time</p>
   <table>
     <tr><th>Player</th><th>Score</th><th>Date</th></tr>
-    <tr><td>${record ? record.player : '—'}</td><td>${record ? record.score.toFixed(0) : '—'}</td><td>${record ? record.date : '—'}</td></tr>
+    ${top5.map(r=>`<tr><td>${r.player}</td><td>${r.score.toFixed(0)}</td><td>${r.date}</td></tr>`).join('')}
   </table>
+
 
   <h2>Standings</h2>
   <p class="small"> Sorted by average daily score</p>
