@@ -1239,9 +1239,10 @@
             "Gita": 97,
             "Daniel": 100,
             "Kelly": 97,
+            "Olivia": 92,
+            "Taylor": 98,
             "Joel": 97,
-            "Daphne": 99,
-            "Olivia": 92
+            "Daphne": 99
           }
         },
         {
@@ -1250,9 +1251,10 @@
             "Gita": 97,
             "Daniel": 98,
             "Kelly": 96,
+            "Olivia": 87,
+            "Taylor": 67,
             "Joel": 99,
-            "Daphne": 86,
-            "Olivia": 87
+            "Daphne": 86
           }
         },
         {
@@ -1261,9 +1263,10 @@
             "Gita": 78,
             "Daniel": 63,
             "Kelly": 80,
+            "Olivia": 81,
+            "Taylor": 74,
             "Joel": 73,
-            "Daphne": 44,
-            "Olivia": 81
+            "Daphne": 44
           }
         },
         {
@@ -1272,9 +1275,10 @@
             "Gita": 80,
             "Daniel": 90,
             "Kelly": 97,
+            "Olivia": 92,
+            "Taylor": 98,
             "Joel": 80,
-            "Daphne": 95,
-            "Olivia": 92
+            "Daphne": 95
           }
         },
         {
@@ -1283,9 +1287,66 @@
             "Gita": 89,
             "Daniel": 92,
             "Kelly": 80,
+            "Olivia": 87,
+            "Taylor": 86,
             "Joel": 87,
-            "Daphne": 92,
-            "Olivia": 87
+            "Daphne": 92
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1785338383890977",
+      "date": "2026-07-29",
+      "rounds": [
+        {
+          "city": "Petropolis, Rio de Janeiro, Brazil",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 92,
+            "Kelly": 73,
+            "Olivia": 92,
+            "Daphne": 73
+          }
+        },
+        {
+          "city": "Melbourne, Victoria, Australia",
+          "scores": {
+            "Gita": 80,
+            "Daniel": 87,
+            "Kelly": 89,
+            "Olivia": 69,
+            "Daphne": 77
+          }
+        },
+        {
+          "city": "Mumbai, Maharashtra, India",
+          "scores": {
+            "Gita": 90,
+            "Daniel": 80,
+            "Kelly": 83,
+            "Olivia": 81,
+            "Daphne": 81
+          }
+        },
+        {
+          "city": "Palenque, Chiapas, Mexico",
+          "scores": {
+            "Gita": 80,
+            "Daniel": 80,
+            "Kelly": 86,
+            "Olivia": 80,
+            "Daphne": 80
+          }
+        },
+        {
+          "city": "Chitwan, Nepal",
+          "scores": {
+            "Gita": 86,
+            "Daniel": 93,
+            "Kelly": 94,
+            "Olivia": 78,
+            "Daphne": 78
           }
         }
       ]
