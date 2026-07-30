@@ -1306,6 +1306,8 @@
             "Daniel": 92,
             "Kelly": 73,
             "Olivia": 92,
+            "Taylor": 69,
+            "Joel": 99,
             "Daphne": 73
           }
         },
@@ -1316,6 +1318,8 @@
             "Daniel": 87,
             "Kelly": 89,
             "Olivia": 69,
+            "Taylor": 69,
+            "Joel": 80,
             "Daphne": 77
           }
         },
@@ -1326,6 +1330,8 @@
             "Daniel": 80,
             "Kelly": 83,
             "Olivia": 81,
+            "Taylor": 91,
+            "Joel": 83,
             "Daphne": 81
           }
         },
@@ -1336,6 +1342,8 @@
             "Daniel": 80,
             "Kelly": 86,
             "Olivia": 80,
+            "Taylor": 78,
+            "Joel": 78,
             "Daphne": 80
           }
         },
@@ -1346,7 +1354,55 @@
             "Daniel": 93,
             "Kelly": 94,
             "Olivia": 78,
+            "Taylor": 92,
+            "Joel": 94,
             "Daphne": 78
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1785415912757319",
+      "date": "2026-07-30",
+      "rounds": [
+        {
+          "city": "Kansas City, Missouri, USA",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Olivia": 94
+          }
+        },
+        {
+          "city": "Ellis Island, New York, USA",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Olivia": 93
+          }
+        },
+        {
+          "city": "Salzburg, Austria",
+          "scores": {
+            "Gita": 90,
+            "Daniel": 99,
+            "Olivia": 91
+          }
+        },
+        {
+          "city": "Baghdad, Iraq",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 94,
+            "Olivia": 87
+          }
+        },
+        {
+          "city": "Shanghai, China",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Olivia": 80
           }
         }
       ]
