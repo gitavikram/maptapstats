@@ -254,7 +254,7 @@ function viewStandings(){
   <h2>Score Trends</h2>
   <p class="small">Running average of daily score over the season.</p>
   ${lineChart(series)}
-  <p class="small">
+  <p class="medium">
     ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
   </p>`
 
