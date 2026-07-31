@@ -220,6 +220,13 @@ function viewStandings(){
   if(state.days.length===0) return `<h2>Standings</h2><p>No results available</p>`;
   const top5 = topScores(5);
 
+  //Running Average
+  const series = state.players.map((p,i)=>({
+    name: p,
+    color: PLAYER_COLORS[i % PLAYER_COLORS.length],
+    points: runningAverages(p)
+  }));
+
   //Current Record and Standings Tables
   return `
   <h2>Leaderboard</h2>
@@ -242,14 +249,16 @@ function viewStandings(){
         <td>${s.total.toFixed(0)}</td>
         <td>${s.played}</td>
       </tr>`).join('')}
-  </table>`
+  </table>
+  
+  <h2>Score Trends</h2>
+  <p class="small">Running average of daily score over the season.</p>
+  ${lineChart(series)}
+  <p class="small">
+    ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
+  </p>`
 
-  //Running Average
-  const series = state.players.map((p,i)=>({
-    name: p,
-    color: PLAYER_COLORS[i % PLAYER_COLORS.length],
-    points: runningAverages(p)
-  }));
+
 }
 
 //Page: Add Results
