@@ -196,10 +196,12 @@ function lineChart(series, width=700, height=260){
   const pad = 35;
   const allY = series.flatMap(s=>s.points.map(p=>p.y));
   const maxY = allY.length ? Math.max(...allY) : 1;
+  const minY = allY.length ? Math.min(...allY) : 0;
+  const range = maxY - minY || 1; // avoid divide-by-zero if all scores are identical
   const maxLen = Math.max(1, ...series.map(s=>s.points.length)) - 1;
 
   const xPos = i => maxLen===0 ? pad : pad + (i/maxLen)*(width-pad*1.5);
-  const yPos = v => height-pad - (v/maxY)*(height-pad*1.6);
+  const yPos = v => height-pad - ((v-minY)/range)*(height-pad*1.6);
 
   let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}">`;
   series.forEach(s=>{
