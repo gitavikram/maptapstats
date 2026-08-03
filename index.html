@@ -192,7 +192,7 @@ function runningAverages(player){
   return points;
 }
 //Line Chart graphic
-function lineChart(series, width=700, height=260){
+function lineChart(series, width=700, height=600){
   const pad = 35;
   const allY = series.flatMap(s=>s.points.map(p=>p.y));
   const minY = 400;
