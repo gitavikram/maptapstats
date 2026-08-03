@@ -193,17 +193,28 @@ function runningAverages(player){
 }
 //Line Chart graphic
 function lineChart(series, width=700, height=600){
-  const pad = 35;
+  const pad = 40;
   const allY = series.flatMap(s=>s.points.map(p=>p.y));
-  const minY = 400;
-  const maxY = 1000;
-  const range = maxY - minY || 1; // avoid divide-by-zero if all scores are identical
+  const rawMax = allY.length ? Math.max(...allY) : 1000;
+  const rawMin = allY.length ? Math.min(...allY) : 400;
+  const cushion = (rawMax - rawMin) * 0.15 || 50;
+  const minY = rawMin - cushion;
+  const maxY = rawMax + cushion;
+  const range = maxY - minY;
   const maxLen = Math.max(1, ...series.map(s=>s.points.length)) - 1;
 
   const xPos = i => maxLen===0 ? pad : pad + (i/maxLen)*(width-pad*1.5);
   const yPos = v => height-pad - ((v-minY)/range)*(height-pad*1.6);
 
   let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}">`;
+
+  for(let i=0;i<=5;i++){
+    const val = minY + (range * i/5);
+    const gy = yPos(val);
+    svg += `<line x1="${pad}" y1="${gy}" x2="${width-10}" y2="${gy}" stroke="#ddd" stroke-width="1"/>`;
+    svg += `<text x="2" y="${gy+4}" font-size="10" fill="#666">${val.toFixed(0)}</text>`;
+  }
+
   series.forEach(s=>{
     if(s.points.length===0) return;
     const pts = s.points.map((p,i)=>`${xPos(i)},${yPos(p.y)}`).join(' ');
