@@ -195,8 +195,8 @@ function runningAverages(player){
 function lineChart(series, width=700, height=260){
   const pad = 35;
   const allY = series.flatMap(s=>s.points.map(p=>p.y));
-  const maxY = allY.length ? Math.max(...allY) : 1;
-  const minY = allY.length ? Math.min(...allY) : 0;
+  const minY = 400;
+  const maxY = 1000;
   const range = maxY - minY || 1; // avoid divide-by-zero if all scores are identical
   const maxLen = Math.max(1, ...series.map(s=>s.points.length)) - 1;
 
@@ -209,7 +209,8 @@ function lineChart(series, width=700, height=260){
     const pts = s.points.map((p,i)=>`${xPos(i)},${yPos(p.y)}`).join(' ');
     svg += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
     s.points.forEach((p,i)=>{
-      svg += `<circle cx="${xPos(i)}" cy="${yPos(p.y)}" r="3" fill="${s.color}"/>`;
+      const cx = xPos(i), cy = yPos(p.y);
+      svg += `<circle cx="${cx}" cy="${cy}" r="3" fill="${s.color}"/>`;
     });
   });
   svg += `</svg>`;
