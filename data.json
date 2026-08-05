@@ -1620,9 +1620,10 @@
             "Gita": 98,
             "Daniel": 97,
             "Kelly": 98,
-            "Daphne": 96,
             "Olivia": 92,
-            "Joel": 95
+            "Taylor": 86,
+            "Joel": 95,
+            "Daphne": 96
           }
         },
         {
@@ -1631,9 +1632,10 @@
             "Gita": 100,
             "Daniel": 99,
             "Kelly": 99,
-            "Daphne": 87,
             "Olivia": 89,
-            "Joel": 99
+            "Taylor": 92,
+            "Joel": 99,
+            "Daphne": 87
           }
         },
         {
@@ -1642,9 +1644,10 @@
             "Gita": 86,
             "Daniel": 97,
             "Kelly": 84,
-            "Daphne": 92,
             "Olivia": 92,
-            "Joel": 94
+            "Taylor": 92,
+            "Joel": 94,
+            "Daphne": 92
           }
         },
         {
@@ -1653,9 +1656,10 @@
             "Gita": 90,
             "Daniel": 97,
             "Kelly": 88,
-            "Daphne": 82,
             "Olivia": 85,
-            "Joel": 86
+            "Taylor": 83,
+            "Joel": 86,
+            "Daphne": 82
           }
         },
         {
@@ -1664,9 +1668,132 @@
             "Gita": 83,
             "Daniel": 90,
             "Kelly": 84,
-            "Daphne": 67,
             "Olivia": 98,
-            "Joel": 94
+            "Taylor": 85,
+            "Joel": 94,
+            "Daphne": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1785939091869111",
+      "date": "2026-08-04",
+      "rounds": [
+        {
+          "city": "Versailles, France",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 98,
+            "Kelly": 96,
+            "Olivia": 98,
+            "Brandon": 88,
+            "Taylor": 94,
+            "Joel": 95,
+            "Daphne": 97
+          }
+        },
+        {
+          "city": "Stockholm, Sweden",
+          "scores": {
+            "Gita": 90,
+            "Daniel": 90,
+            "Kelly": 93,
+            "Olivia": 93,
+            "Brandon": 75,
+            "Taylor": 84,
+            "Joel": 94,
+            "Daphne": 94
+          }
+        },
+        {
+          "city": "Szczecin, Poland",
+          "scores": {
+            "Gita": 88,
+            "Daniel": 95,
+            "Kelly": 92,
+            "Olivia": 80,
+            "Brandon": 90,
+            "Taylor": 88,
+            "Joel": 87,
+            "Daphne": 91
+          }
+        },
+        {
+          "city": "Portland, Maine, USA",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 100,
+            "Kelly": 93,
+            "Olivia": 99,
+            "Brandon": 99,
+            "Taylor": 96,
+            "Joel": 96,
+            "Daphne": 97
+          }
+        },
+        {
+          "city": "Kampala, Uganda",
+          "scores": {
+            "Gita": 83,
+            "Daniel": 89,
+            "Kelly": 81,
+            "Olivia": 89,
+            "Brandon": 69,
+            "Taylor": 70,
+            "Joel": 82,
+            "Daphne": 89
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1785939213135960",
+      "date": "2026-08-05",
+      "rounds": [
+        {
+          "city": "Annapolis, Maryland, USA",
+          "scores": {
+            "Gita": 98,
+            "Daniel": 99,
+            "Kelly": 98,
+            "Olivia": 99
+          }
+        },
+        {
+          "city": "Brisbane, Queensland, Australia",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 85,
+            "Kelly": 78,
+            "Olivia": 80
+          }
+        },
+        {
+          "city": "Helena, Montana, USA",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 93,
+            "Kelly": 95,
+            "Olivia": 83
+          }
+        },
+        {
+          "city": "Copiapo, Atacama, Chile",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 89,
+            "Kelly": 89,
+            "Olivia": 97
+          }
+        },
+        {
+          "city": "Petropavlovsk-Kamchatsky, Kamchatka, Russia",
+          "scores": {
+            "Gita": 45,
+            "Daniel": 59,
+            "Kelly": 43,
+            "Olivia": 65
           }
         }
       ]
