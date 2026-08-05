@@ -192,7 +192,7 @@ function runningAverages(player){
   return points;
 }
 //Line Chart graphic
-function lineChart(series, width=700, height=600){
+function lineChart(series, width=700, height=600, sortedDates=[]){
   const pad = 40;
   const allY = series.flatMap(s=>s.points.map(p=>p.y));
   const rawMax = allY.length ? Math.max(...allY) : 1000;
@@ -201,7 +201,7 @@ function lineChart(series, width=700, height=600){
   const minY = rawMin - cushion;
   const maxY = rawMax + cushion;
   const range = maxY - minY;
-  const maxLen = Math.max(1, ...series.map(s=>s.points.length)) - 1;
+  const maxLen = Math.max(1, sortedDates.length, ...series.map(s=>s.points.length)) - 1;
 
   const xPos = i => maxLen===0 ? pad : pad + (i/maxLen)*(width-pad*1.5);
   const yPos = v => height-pad - ((v-minY)/range)*(height-pad*1.6);
@@ -214,6 +214,15 @@ function lineChart(series, width=700, height=600){
     svg += `<line x1="${pad}" y1="${gy}" x2="${width-10}" y2="${gy}" stroke="#ddd" stroke-width="1"/>`;
     svg += `<text x="2" y="${gy+4}" font-size="10" fill="#666">${val.toFixed(0)}</text>`;
   }
+
+  sortedDates.forEach((dateStr, i)=>{
+    const d = new Date(dateStr + 'T00:00:00');
+    const prevMonth = i>0 ? new Date(sortedDates[i-1] + 'T00:00:00').getMonth() : null;
+    if(i===0 || d.getMonth() !== prevMonth){
+      const x = xPos(i);
+      svg += `<text x="${x}" y="${height-pad+16}" font-size="10" fill="#666" text-anchor="middle">${d.toLocaleString('default',{month:'short'})}</text>`;
+    }
+  });
 
   series.forEach(s=>{
     if(s.points.length===0) return;
@@ -241,6 +250,8 @@ function viewStandings(){
     points: runningAverages(p)
   }));
 
+  const sortedDates = state.days.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(d=>d.date);
+
   //Current Record and Standings Tables
   return `
   <h2>Leaderboard</h2>
@@ -267,7 +278,7 @@ function viewStandings(){
   
   <h2>Score Trends</h2>
   <p class="small">Running average of daily score over the season.</p>
-  ${lineChart(series)}
+  ${lineChart(series, 700, 600, sortedDates)}
   <p class="medium">
     ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
   </p>`
