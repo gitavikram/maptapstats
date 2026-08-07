@@ -1758,6 +1758,9 @@
             "Daniel": 99,
             "Kelly": 98,
             "Olivia": 99,
+            "Brandon": 99,
+            "Taylor": 94,
+            "Joel": 98,
             "Daphne": 94
           }
         },
@@ -1768,6 +1771,9 @@
             "Daniel": 85,
             "Kelly": 78,
             "Olivia": 80,
+            "Brandon": 100,
+            "Taylor": 62,
+            "Joel": 99,
             "Daphne": 69
           }
         },
@@ -1778,6 +1784,9 @@
             "Daniel": 93,
             "Kelly": 95,
             "Olivia": 83,
+            "Brandon": 89,
+            "Taylor": 80,
+            "Joel": 95,
             "Daphne": 90
           }
         },
@@ -1788,6 +1797,9 @@
             "Daniel": 89,
             "Kelly": 89,
             "Olivia": 97,
+            "Brandon": 77,
+            "Taylor": 95,
+            "Joel": 80,
             "Daphne": 95
           }
         },
@@ -1798,7 +1810,117 @@
             "Daniel": 59,
             "Kelly": 43,
             "Olivia": 65,
+            "Brandon": 85,
+            "Taylor": 60,
+            "Joel": 39,
             "Daphne": 63
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786115773749123",
+      "date": "2026-08-06",
+      "rounds": [
+        {
+          "city": "Hollywood, California, USA",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 99,
+            "Kelly": 99,
+            "Olivia": 87,
+            "Brandon": 99,
+            "Taylor": 85,
+            "Joel": 100,
+            "Daphne": 92
+          }
+        },
+        {
+          "city": "Osaka, Japan",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 97,
+            "Kelly": 100,
+            "Olivia": 92,
+            "Brandon": 100,
+            "Taylor": 86,
+            "Joel": 97,
+            "Daphne": 91
+          }
+        },
+        {
+          "city": "Dover Strait, England",
+          "scores": {
+            "Gita": 98,
+            "Daniel": 95,
+            "Kelly": 99,
+            "Olivia": 94,
+            "Brandon": 92,
+            "Taylor": 91,
+            "Joel": 92,
+            "Daphne": 96
+          }
+        },
+        {
+          "city": "Basra, Iraq",
+          "scores": {
+            "Gita": 88,
+            "Daniel": 97,
+            "Kelly": 88,
+            "Olivia": 92,
+            "Brandon": 84,
+            "Taylor": 51,
+            "Joel": 94,
+            "Daphne": 97
+          }
+        },
+        {
+          "city": "Ipoh, Perak, Malaysia",
+          "scores": {
+            "Gita": 70,
+            "Daniel": 90,
+            "Kelly": 96,
+            "Olivia": 61,
+            "Brandon": 85,
+            "Taylor": 89,
+            "Joel": 86,
+            "Daphne": 99
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786115854861845",
+      "date": "2026-08-07",
+      "rounds": [
+        {
+          "city": "Newport, Rhode Island, USA",
+          "scores": {
+            "Gita": 100
+          }
+        },
+        {
+          "city": "Valencia, Spain",
+          "scores": {
+            "Gita": 91
+          }
+        },
+        {
+          "city": "Rhodes, Greece",
+          "scores": {
+            "Gita": 91
+          }
+        },
+        {
+          "city": "Kagoshima, Japan",
+          "scores": {
+            "Gita": 80
+          }
+        },
+        {
+          "city": "Yamoussoukro, Cote d'Ivoire",
+          "scores": {
+            "Gita": 95
           }
         }
       ]
