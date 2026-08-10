@@ -2111,7 +2111,9 @@
           "scores": {
             "Gita": 99,
             "Kelly": 98,
-            "Daphne": 91
+            "Daphne": 91,
+            "Daniel": 100,
+            "Olivia": 87
           }
         },
         {
@@ -2119,7 +2121,9 @@
           "scores": {
             "Gita": 94,
             "Kelly": 87,
-            "Daphne": 87
+            "Daphne": 87,
+            "Daniel": 94,
+            "Olivia": 92
           }
         },
         {
@@ -2127,7 +2131,9 @@
           "scores": {
             "Gita": 94,
             "Kelly": 72,
-            "Daphne": 83
+            "Daphne": 83,
+            "Daniel": 74,
+            "Olivia": 80
           }
         },
         {
@@ -2135,7 +2141,9 @@
           "scores": {
             "Gita": 82,
             "Kelly": 94,
-            "Daphne": 84
+            "Daphne": 84,
+            "Daniel": 99,
+            "Olivia": 93
           }
         },
         {
@@ -2143,7 +2151,9 @@
           "scores": {
             "Gita": 98,
             "Kelly": 95,
-            "Daphne": 69
+            "Daphne": 69,
+            "Daniel": 98,
+            "Olivia": 82
           }
         }
       ]
