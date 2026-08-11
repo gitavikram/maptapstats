@@ -2110,50 +2110,101 @@
           "city": "Anaheim, California, USA",
           "scores": {
             "Gita": 99,
-            "Kelly": 98,
-            "Daphne": 91,
             "Daniel": 100,
-            "Olivia": 87
+            "Kelly": 98,
+            "Olivia": 87,
+            "Brandon": 92,
+            "Taylor": 84,
+            "Joel": 100,
+            "Daphne": 91
           }
         },
         {
           "city": "Quito, Ecuador",
           "scores": {
             "Gita": 94,
-            "Kelly": 87,
-            "Daphne": 87,
             "Daniel": 94,
-            "Olivia": 92
+            "Kelly": 87,
+            "Olivia": 92,
+            "Brandon": 60,
+            "Taylor": 60,
+            "Joel": 94,
+            "Daphne": 87
           }
         },
         {
           "city": "Thiruvanathapuram, Kerala, India",
           "scores": {
             "Gita": 94,
-            "Kelly": 72,
-            "Daphne": 83,
             "Daniel": 74,
-            "Olivia": 80
+            "Kelly": 72,
+            "Olivia": 80,
+            "Brandon": 87,
+            "Taylor": 80,
+            "Joel": 74,
+            "Daphne": 83
           }
         },
         {
           "city": "Amboseli, Kenya",
           "scores": {
             "Gita": 82,
-            "Kelly": 94,
-            "Daphne": 84,
             "Daniel": 99,
-            "Olivia": 93
+            "Kelly": 94,
+            "Olivia": 93,
+            "Brandon": 49,
+            "Taylor": 77,
+            "Joel": 99,
+            "Daphne": 84
           }
         },
         {
           "city": "St. John's, Antigua and Barbuda",
           "scores": {
             "Gita": 98,
-            "Kelly": 95,
-            "Daphne": 69,
             "Daniel": 98,
-            "Olivia": 82
+            "Kelly": 95,
+            "Olivia": 82,
+            "Brandon": 98,
+            "Taylor": 71,
+            "Joel": 93,
+            "Daphne": 69
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786451158422935",
+      "date": "2026-08-11",
+      "rounds": [
+        {
+          "city": "St. Louis, Missouri, USA",
+          "scores": {
+            "Gita": 100
+          }
+        },
+        {
+          "city": "Fukuoka, Japan",
+          "scores": {
+            "Gita": 82
+          }
+        },
+        {
+          "city": "Riga, Latvia",
+          "scores": {
+            "Gita": 90
+          }
+        },
+        {
+          "city": "N'Djamena, Chad",
+          "scores": {
+            "Gita": 91
+          }
+        },
+        {
+          "city": "Iloilo City, Philippines",
+          "scores": {
+            "Gita": 93
           }
         }
       ]
