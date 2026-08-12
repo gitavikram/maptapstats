@@ -2180,31 +2180,127 @@
         {
           "city": "St. Louis, Missouri, USA",
           "scores": {
-            "Gita": 100
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Olivia": 100,
+            "Brandon": 92,
+            "Taylor": 100,
+            "Joel": 100,
+            "Daphne": 90
           }
         },
         {
           "city": "Fukuoka, Japan",
           "scores": {
-            "Gita": 82
+            "Gita": 82,
+            "Daniel": 85,
+            "Kelly": 91,
+            "Olivia": 90,
+            "Brandon": 80,
+            "Taylor": 85,
+            "Joel": 80,
+            "Daphne": 82
           }
         },
         {
           "city": "Riga, Latvia",
           "scores": {
-            "Gita": 90
+            "Gita": 90,
+            "Daniel": 97,
+            "Kelly": 87,
+            "Olivia": 76,
+            "Brandon": 58,
+            "Taylor": 76,
+            "Joel": 97,
+            "Daphne": 93
           }
         },
         {
           "city": "N'Djamena, Chad",
           "scores": {
-            "Gita": 91
+            "Gita": 91,
+            "Daniel": 85,
+            "Kelly": 83,
+            "Olivia": 80,
+            "Brandon": 66,
+            "Taylor": 79,
+            "Joel": 87,
+            "Daphne": 93
           }
         },
         {
           "city": "Iloilo City, Philippines",
           "scores": {
-            "Gita": 93
+            "Gita": 93,
+            "Daniel": 96,
+            "Kelly": 97,
+            "Olivia": 90,
+            "Brandon": 90,
+            "Taylor": 60,
+            "Joel": 97,
+            "Daphne": 98
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786547628760306",
+      "date": "2026-08-12",
+      "rounds": [
+        {
+          "city": "",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 96,
+            "Olivia": 98,
+            "Taylor": 98,
+            "Daphne": 95
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 97,
+            "Kelly": 93,
+            "Olivia": 97,
+            "Taylor": 96,
+            "Daphne": 97
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 86,
+            "Daniel": 86,
+            "Kelly": 87,
+            "Olivia": 80,
+            "Taylor": 85,
+            "Daphne": 84
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 91,
+            "Daniel": 97,
+            "Kelly": 79,
+            "Olivia": 85,
+            "Taylor": 90,
+            "Daphne": 86
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 99,
+            "Kelly": 85,
+            "Olivia": 87,
+            "Taylor": 68,
+            "Daphne": 76
           }
         }
       ]
