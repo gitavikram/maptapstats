@@ -112,12 +112,7 @@ function renderTabs(){
 function render(){
   renderTabs();
   const c = document.getElementById('content');
-  if(activeTab==='standings'){
-    const selA = document.getElementById('compare-a');
-    const selB = document.getElementById('compare-b');
-    if(selA) selA.onchange = ()=>{ compareA = selA.value || null; render(); };
-    if(selB) selB.onchange = ()=>{ compareB = selB.value || null; render(); };
-  }
+  if(activeTab==='standings') c.innerHTML = viewStandings();
   else if(activeTab==='entry') c.innerHTML = viewEntry();
   else if(activeTab==='players') c.innerHTML = viewPlayers();
   else if(activeTab==='cities') c.innerHTML = viewCities();
@@ -617,19 +612,26 @@ function attachHandlers(){
       if(confirm("Delete this day's results?")){ state.days = state.days.filter(d=>d.id!==b.dataset.delete); render(); }
     });
   }
-if(activeTab==='players'){
-  document.querySelectorAll('[data-subview]').forEach(b=>b.onclick=()=>{
-    playersSubView = b.dataset.subview;
-    render();
-  });
-  const sel = document.getElementById('player-select');
-  if(sel) sel.onchange = ()=>{ document.getElementById('player-body').innerHTML = renderPlayerBody(sel.value); };
-  const daySel = document.getElementById('day-select');
-  if(daySel) daySel.onchange = ()=>{
-    selectedDayId = daySel.value;
-    document.getElementById('day-body').innerHTML = renderDayBody(selectedDayId);
-  };
-}
+  if(activeTab==='standings'){
+    const selA = document.getElementById('compare-a');
+    const selB = document.getElementById('compare-b');
+    if(selA) selA.onchange = ()=>{ compareA = selA.value || null; render(); };
+    if(selB) selB.onchange = ()=>{ compareB = selB.value || null; render(); };
+  }
+  
+  if(activeTab==='players'){
+    document.querySelectorAll('[data-subview]').forEach(b=>b.onclick=()=>{
+      playersSubView = b.dataset.subview;
+      render();
+    });
+    const sel = document.getElementById('player-select');
+    if(sel) sel.onchange = ()=>{ document.getElementById('player-body').innerHTML = renderPlayerBody(sel.value); };
+    const daySel = document.getElementById('day-select');
+    if(daySel) daySel.onchange = ()=>{
+      selectedDayId = daySel.value;
+      document.getElementById('day-body').innerHTML = renderDayBody(selectedDayId);
+    };
+  }
   if(activeTab==='h2h'){
     const s1 = document.getElementById('h2h-a'), s2 = document.getElementById('h2h-b');
     if(s1) s1.onchange = render;
