@@ -229,7 +229,38 @@ function lineChart(series, width=700, height=600, sortedDates=[]){
     svg += `<text x="2" y="${gy+4}" font-size="10" fill="#666">${val.toFixed(0)}</text>`;
   }
 
-  //Daily Score Chart graphic
+  function getWeekStart(d){
+    const copy = new Date(d);
+    const day = copy.getDay();
+    copy.setDate(copy.getDate() - day);
+    copy.setHours(0,0,0,0);
+    return copy.getTime();
+  }
+
+  sortedDates.forEach((dateStr, i)=>{
+    const d = new Date(dateStr + 'T00:00:00');
+    const prevWeekStart = i>0 ? getWeekStart(new Date(sortedDates[i-1] + 'T00:00:00')) : null;
+    const thisWeekStart = getWeekStart(d);
+    if(i===0 || thisWeekStart !== prevWeekStart){
+      const x = xPos(i);
+      const label = `${d.getMonth()+1}/${d.getDate()}`;
+      svg += `<text x="${x}" y="${height-pad+16}" font-size="10" fill="#666" text-anchor="middle">${label}</text>`;
+    }
+  });
+
+  series.forEach(s=>{
+    if(s.points.length===0) return;
+    const pts = s.points.map((p,i)=>`${xPos(i)},${yPos(p.y)}`).join(' ');
+    svg += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+    s.points.forEach((p,i)=>{
+      const cx = xPos(i), cy = yPos(p.y);
+      svg += `<circle cx="${cx}" cy="${cy}" r="3" fill="${s.color}"/>`;
+    });
+  });
+  svg += `</svg>`;
+  return svg;
+}
+
 //Daily Score Chart graphic
 function dailyScoreChart(series, width=700, height=600, sortedDates=[]){
   const pad = 40;
@@ -369,6 +400,7 @@ function viewStandings(){
   <p class="medium">
     ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
   </p>
+
   <p class="small">Actual score per day played (not a running average).</p>
   ${dailyScoreChart(dailySeries, 700, 600, sortedDates)}
   <p class="legend">
