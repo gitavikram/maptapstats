@@ -93,6 +93,8 @@ let playersSubView = 'profile'; // 'profile' or 'byday'
 let selectedDayId = null;
 
 let editingDayId = null;
+let compareA = null;
+let compareB = null;
 
 function renderTabs(){
   document.getElementById('tabs').innerHTML = TABS.map(t=>
@@ -110,7 +112,12 @@ function renderTabs(){
 function render(){
   renderTabs();
   const c = document.getElementById('content');
-  if(activeTab==='standings') c.innerHTML = viewStandings();
+  if(activeTab==='standings'){
+    const selA = document.getElementById('compare-a');
+    const selB = document.getElementById('compare-b');
+    if(selA) selA.onchange = ()=>{ compareA = selA.value || null; render(); };
+    if(selB) selB.onchange = ()=>{ compareB = selB.value || null; render(); };
+  }
   else if(activeTab==='entry') c.innerHTML = viewEntry();
   else if(activeTab==='players') c.innerHTML = viewPlayers();
   else if(activeTab==='cities') c.innerHTML = viewCities();
@@ -326,11 +333,14 @@ function viewStandings(){
     points: runningAverages(p)
   }));
 
-  const dailySeries = state.players.map((p,i)=>({
-    name: p,
-    color: PLAYER_COLORS[i%PLAYER_COLORS.length],
-    points: dailyScores(p,14)
-  }));
+  const dailySeries = state.players
+    .map((p,i)=>({
+      name: p,
+      color: PLAYER_COLORS[i%PLAYER_COLORS.length],
+      points: dailyScores(p,14)
+    }))
+
+    .filter(s => !(compareA && compareB) || s.name === compareA || s.name === compareB);
 
   const sortedDates = state.days.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(d=>d.date);
   const recentDates = sortedDates.slice(-14);
@@ -366,10 +376,19 @@ function viewStandings(){
     ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
   </p>
 
-  <p class="small">Actual score per day played (not a running average).</p>
+  <p class="small">Actual score per day played (not a running average). Last 14 days played.</p>
+  <select id="compare-a">
+    <option value="">— All Players —</option>
+    ${state.players.map(p=>`<option ${p===compareA?'selected':''}>${p}</option>`).join('')}
+  </select>
+  vs
+  <select id="compare-b">
+    <option value="">— All Players —</option>
+    ${state.players.map(p=>`<option ${p===compareB?'selected':''}>${p}</option>`).join('')}
+  </select>
   ${dailyScoreChart(dailySeries, 700, 600, recentDates)}
   <p class="legend">
-    ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
+    ${dailySeries.map(s=>`<span style="color:${s.color};">●</span> ${s.name}`).join('  ')}
   </p>
   `
 }
