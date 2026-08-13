@@ -271,7 +271,7 @@ function lineChart(series, width=700, height=600, sortedDates=[]){
 //Daily Score Chart graphic
 function dailyScoreChart(series, width=700, height=600, sortedDates=[]){
   const pad = 40;
-  const minY = 600;
+  const minY = 400;
   const maxY = 1000;
   const range = maxY - minY;
   const maxLen = Math.max(1, sortedDates.length, ...series.map(s=>s.points.length)) - 1;
