@@ -2249,7 +2249,7 @@
       "date": "2026-08-12",
       "rounds": [
         {
-          "city": "",
+          "city": "Paris, France",
           "scores": {
             "Gita": 100,
             "Daniel": 100,
@@ -2261,7 +2261,7 @@
           }
         },
         {
-          "city": "",
+          "city": "Fort Wayne, Indiana, USA",
           "scores": {
             "Gita": 100,
             "Daniel": 97,
@@ -2273,7 +2273,7 @@
           }
         },
         {
-          "city": "",
+          "city": "Durban, South Africa",
           "scores": {
             "Gita": 86,
             "Daniel": 86,
@@ -2285,7 +2285,7 @@
           }
         },
         {
-          "city": "",
+          "city": "Abuja, Nigeria",
           "scores": {
             "Gita": 91,
             "Daniel": 97,
@@ -2297,7 +2297,7 @@
           }
         },
         {
-          "city": "",
+          "city": "Kutaisi, Georgia",
           "scores": {
             "Gita": 96,
             "Daniel": 99,
@@ -2306,6 +2306,57 @@
             "Taylor": 68,
             "Joel": 99,
             "Daphne": 76
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786640066675515",
+      "date": "2026-08-13",
+      "rounds": [
+        {
+          "city": "",
+          "scores": {
+            "Gita": 98,
+            "Olivia": 94,
+            "Joel": 99,
+            "Daphne": 98
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 92,
+            "Olivia": 80,
+            "Joel": 92,
+            "Daphne": 99
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 73,
+            "Olivia": 78,
+            "Joel": 100,
+            "Daphne": 98
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 80,
+            "Olivia": 90,
+            "Joel": 80,
+            "Daphne": 87
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 83,
+            "Olivia": 80,
+            "Joel": 84,
+            "Daphne": 89
           }
         }
       ]
