@@ -264,12 +264,8 @@ function lineChart(series, width=700, height=600, sortedDates=[]){
 //Daily Score Chart graphic
 function dailyScoreChart(series, width=700, height=600, sortedDates=[]){
   const pad = 40;
-  const allY = series.flatMap(s=>s.points.map(p=>p.y));
-  const rawMax = allY.length ? Math.max(...allY) : 1000;
-  const rawMin = allY.length ? Math.min(...allY) : 400;
-  const cushion = (rawMax - rawMin) * 0.15 || 50;
-  const minY = rawMin - cushion;
-  const maxY = rawMax + cushion;
+  const minY = 600;
+  const maxY = 1000;
   const range = maxY - minY;
   const maxLen = Math.max(1, sortedDates.length, ...series.map(s=>s.points.length)) - 1;
 
