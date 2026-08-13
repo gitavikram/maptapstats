@@ -371,7 +371,7 @@ function viewStandings(){
     ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
   </p>
 
-  <p class="small">Actual score per day played (not a running average). Last 14 days played.</p>
+  <p class="small">Select two players to compare daily scores over the past 14 days</p>
   <select id="compare-a">
     <option value="">Player A</option>
     ${state.players.map(p=>`<option ${p===compareA?'selected':''}>${p}</option>`).join('')}
