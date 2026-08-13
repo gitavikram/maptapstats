@@ -193,7 +193,7 @@ function runningAverages(player){
 }
 
 //Daily Scores for Line Graph
-function dailyScores(player){
+function dailyScores(player, lastNDays=null){
   const sortedDays = state.days.slice().sort((a,b)=>a.date.localeCompare(b.date));
   const points = [];
   sortedDays.forEach(d=>{
@@ -202,7 +202,7 @@ function dailyScores(player){
       points.push({x: d.date, y: dayTotal(d, player)});
     }
   });
-  return points;
+  return lastNDays ? points.slice(-lastNDays) : points;
 }
 
 //Line Chart graphic
@@ -333,10 +333,11 @@ function viewStandings(){
   const dailySeries = state.players.map((p,i)=>({
     name: p,
     color: PLAYER_COLORS[i%PLAYER_COLORS.length],
-    points: dailyScores(p)
+    points: dailyScores(p,14)
   }));
 
   const sortedDates = state.days.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(d=>d.date);
+  const recentDates = sortedDates.slice(-14);
 
   //Current Record and Standings Tables
   return `
@@ -370,7 +371,7 @@ function viewStandings(){
   </p>
 
   <p class="small">Actual score per day played (not a running average).</p>
-  ${dailyScoreChart(dailySeries, 700, 600, sortedDates)}
+  ${dailyScoreChart(dailySeries, 700, 600, recentDates)}
   <p class="legend">
     ${state.players.map((p,i)=>`<span style="color:${PLAYER_COLORS[i%PLAYER_COLORS.length]};">●</span> ${p}`).join('  ')}
   </p>
