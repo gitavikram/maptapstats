@@ -2315,48 +2315,287 @@
       "date": "2026-08-13",
       "rounds": [
         {
-          "city": "",
+          "city": "Hartford, Connecticut, USA",
           "scores": {
             "Gita": 98,
+            "Daniel": 100,
+            "Kelly": 100,
             "Olivia": 94,
+            "Taylor": 97,
             "Joel": 99,
             "Daphne": 98
           }
         },
         {
-          "city": "",
+          "city": "Mexico City, Mexico",
           "scores": {
             "Gita": 92,
+            "Daniel": 84,
+            "Kelly": 95,
             "Olivia": 80,
+            "Taylor": 83,
             "Joel": 92,
             "Daphne": 99
           }
         },
         {
-          "city": "",
+          "city": "Tunis, Tunisia",
           "scores": {
             "Gita": 73,
+            "Daniel": 98,
+            "Kelly": 95,
             "Olivia": 78,
+            "Taylor": 95,
             "Joel": 100,
             "Daphne": 98
           }
         },
         {
-          "city": "",
+          "city": "Tepic, Nayarit, Mexico",
           "scores": {
             "Gita": 80,
+            "Daniel": 92,
+            "Kelly": 80,
             "Olivia": 90,
+            "Taylor": 87,
             "Joel": 80,
             "Daphne": 87
           }
         },
         {
-          "city": "",
+          "city": "Bangui, Central African Republic",
           "scores": {
             "Gita": 83,
+            "Daniel": 88,
+            "Kelly": 88,
             "Olivia": 80,
+            "Taylor": 99,
             "Joel": 84,
             "Daphne": 89
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786974102051184",
+      "date": "2026-08-14",
+      "rounds": [
+        {
+          "city": "Cape Town, South Africa",
+          "scores": {
+            "Gita": 92,
+            "Daniel": 100,
+            "Kelly": 91,
+            "Olivia": 86,
+            "Taylor": 87,
+            "Daphne": 91
+          }
+        },
+        {
+          "city": "Tombstone, Arizona, USA",
+          "scores": {
+            "Gita": 86,
+            "Daniel": 87,
+            "Kelly": 89,
+            "Olivia": 83,
+            "Taylor": 80,
+            "Daphne": 88
+          }
+        },
+        {
+          "city": "Cap-Haitien, Haiti",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 98,
+            "Kelly": 98,
+            "Olivia": 88,
+            "Taylor": 98,
+            "Daphne": 96
+          }
+        },
+        {
+          "city": "Karachi, Pakistan",
+          "scores": {
+            "Gita": 83,
+            "Daniel": 86,
+            "Kelly": 85,
+            "Olivia": 83,
+            "Taylor": 73,
+            "Daphne": 90
+          }
+        },
+        {
+          "city": "Hagatna, Guam, USA",
+          "scores": {
+            "Gita": 25,
+            "Daniel": 34,
+            "Kelly": 99,
+            "Olivia": 5,
+            "Taylor": 74,
+            "Daphne": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786974161800277",
+      "date": "2026-08-15",
+      "rounds": [
+        {
+          "city": "Prague, Czechia",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 99,
+            "Kelly": 99,
+            "Olivia": 87,
+            "Joel": 94,
+            "Daphne": 86
+          }
+        },
+        {
+          "city": "Busan, South Korea",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 94,
+            "Kelly": 97,
+            "Olivia": 93,
+            "Joel": 97,
+            "Daphne": 80
+          }
+        },
+        {
+          "city": "Kandy, Sri Lanka",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 99,
+            "Kelly": 98,
+            "Olivia": 63,
+            "Joel": 98,
+            "Daphne": 99
+          }
+        },
+        {
+          "city": "Corsica, France",
+          "scores": {
+            "Gita": 86,
+            "Daniel": 83,
+            "Kelly": 83,
+            "Olivia": 82,
+            "Joel": 89,
+            "Daphne": 80
+          }
+        },
+        {
+          "city": "Vaduz, Liechtenstein",
+          "scores": {
+            "Gita": 98,
+            "Daniel": 98,
+            "Kelly": 77,
+            "Olivia": 88,
+            "Joel": 88,
+            "Daphne": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786974216365278",
+      "date": "2026-08-16",
+      "rounds": [
+        {
+          "city": "Santa Monica, California, USA",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 99,
+            "Kelly": 99,
+            "Olivia": 88,
+            "Taylor": 96,
+            "Daphne": 92
+          }
+        },
+        {
+          "city": "Nicosia, Cyprus",
+          "scores": {
+            "Gita": 85,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Olivia": 69,
+            "Taylor": 77,
+            "Daphne": 100
+          }
+        },
+        {
+          "city": "Wolfsburg, Germany",
+          "scores": {
+            "Gita": 95,
+            "Daniel": 98,
+            "Kelly": 95,
+            "Olivia": 91,
+            "Taylor": 93,
+            "Daphne": 93
+          }
+        },
+        {
+          "city": "Puerto Plata, Dominican Republic",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 97,
+            "Kelly": 95,
+            "Olivia": 87,
+            "Taylor": 73,
+            "Daphne": 97
+          }
+        },
+        {
+          "city": "Belgrade, Serbia",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 95,
+            "Kelly": 90,
+            "Olivia": 94,
+            "Taylor": 24,
+            "Daphne": 89
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1786974313197344",
+      "date": "2026-08-17",
+      "rounds": [
+        {
+          "city": "Ypres, Blegium",
+          "scores": {
+            "Gita": 100,
+            "Kelly": 97
+          }
+        },
+        {
+          "city": "Brooklyn, New York, USA",
+          "scores": {
+            "Gita": 100,
+            "Kelly": 100
+          }
+        },
+        {
+          "city": "Gaya, Bihar, India",
+          "scores": {
+            "Gita": 95,
+            "Kelly": 87
+          }
+        },
+        {
+          "city": "Baikonur, Kazakhstan",
+          "scores": {
+            "Gita": 84,
+            "Kelly": 90
+          }
+        },
+        {
+          "city": "Libreville, Gabon",
+          "scores": {
+            "Gita": 59,
+            "Kelly": 74
           }
         }
       ]
