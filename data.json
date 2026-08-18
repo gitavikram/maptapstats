@@ -2567,35 +2567,116 @@
           "city": "Ypres, Blegium",
           "scores": {
             "Gita": 100,
-            "Kelly": 97
+            "Daniel": 99,
+            "Kelly": 97,
+            "Olivia": 91,
+            "Joel": 96,
+            "Daphne": 96
           }
         },
         {
           "city": "Brooklyn, New York, USA",
           "scores": {
             "Gita": 100,
-            "Kelly": 100
+            "Daniel": 100,
+            "Kelly": 100,
+            "Olivia": 94,
+            "Joel": 100,
+            "Daphne": 100
           }
         },
         {
           "city": "Gaya, Bihar, India",
           "scores": {
             "Gita": 95,
-            "Kelly": 87
+            "Daniel": 87,
+            "Kelly": 87,
+            "Olivia": 80,
+            "Joel": 85,
+            "Daphne": 79
           }
         },
         {
           "city": "Baikonur, Kazakhstan",
           "scores": {
             "Gita": 84,
-            "Kelly": 90
+            "Daniel": 95,
+            "Kelly": 90,
+            "Olivia": 84,
+            "Joel": 80,
+            "Daphne": 96
           }
         },
         {
           "city": "Libreville, Gabon",
           "scores": {
             "Gita": 59,
-            "Kelly": 74
+            "Daniel": 97,
+            "Kelly": 74,
+            "Olivia": 83,
+            "Joel": 92,
+            "Daphne": 83
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1787095691725931",
+      "date": "2026-08-18",
+      "rounds": [
+        {
+          "city": "Princeton, New Jersey, USA",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 99,
+            "Kelly": 99,
+            "Olivia": 98,
+            "Joel": 99,
+            "Daphne": 99
+          }
+        },
+        {
+          "city": "Guntur, Andhra Pradesh, India",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 86,
+            "Kelly": 85,
+            "Olivia": 94,
+            "Joel": 89,
+            "Daphne": 91
+          }
+        },
+        {
+          "city": "Fairbanks, Alaska, USA",
+          "scores": {
+            "Gita": 93,
+            "Daniel": 90,
+            "Kelly": 91,
+            "Olivia": 95,
+            "Joel": 92,
+            "Daphne": 95
+          }
+        },
+        {
+          "city": "Karakorum, Mongolia",
+          "scores": {
+            "Gita": 93,
+            "Daniel": 97,
+            "Kelly": 96,
+            "Olivia": 78,
+            "Joel": 82,
+            "Daphne": 88
+          }
+        },
+        {
+          "city": "Samarkand, Uzbekistan",
+          "scores": {
+            "Gita": 70,
+            "Daniel": 91,
+            "Kelly": 77,
+            "Olivia": 80,
+            "Joel": 97,
+            "Daphne": 90
           }
         }
       ]
