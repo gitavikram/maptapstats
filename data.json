@@ -3321,33 +3321,99 @@
       "date": "2026-08-29",
       "rounds": [
         {
+          "city": "Stuttgart, Germany",
+          "scores": {
+            "Gita": 92,
+            "Daniel": 93,
+            "Kelly": 96,
+            "Taylor": 93,
+            "Joel": 94,
+            "Daphne": 91
+          }
+        },
+        {
+          "city": "Baltimore, Maryland, USA",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Taylor": 93,
+            "Joel": 100,
+            "Daphne": 98
+          }
+        },
+        {
+          "city": "Calabar, Cross River State, Nigeria",
+          "scores": {
+            "Gita": 91,
+            "Daniel": 94,
+            "Kelly": 77,
+            "Taylor": 93,
+            "Joel": 92,
+            "Daphne": 82
+          }
+        },
+        {
+          "city": "Nanjing, Jiangsu Province, China",
+          "scores": {
+            "Gita": 84,
+            "Daniel": 80,
+            "Kelly": 93,
+            "Taylor": 74,
+            "Joel": 74,
+            "Daphne": 77
+          }
+        },
+        {
+          "city": "Hervey Bay, Queensland, Australia",
+          "scores": {
+            "Gita": 82,
+            "Daniel": 81,
+            "Kelly": 79,
+            "Taylor": 75,
+            "Joel": 78,
+            "Daphne": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1788106107788246",
+      "date": "2026-08-30",
+      "rounds": [
+        {
           "city": "",
           "scores": {
-            "Gita": 92
+            "Gita": 90,
+            "Daniel": 96
           }
         },
         {
           "city": "",
           "scores": {
-            "Gita": 100
+            "Gita": 100,
+            "Daniel": 100
           }
         },
         {
           "city": "",
           "scores": {
-            "Gita": 91
+            "Gita": 95,
+            "Daniel": 77
           }
         },
         {
           "city": "",
           "scores": {
-            "Gita": 84
+            "Gita": 96,
+            "Daniel": 93
           }
         },
         {
           "city": "",
           "scores": {
-            "Gita": 82
+            "Gita": 94,
+            "Daniel": 79
           }
         }
       ]
