@@ -7,7 +7,8 @@
     "Brandon",
     "Taylor",
     "Joel",
-    "Daphne"
+    "Daphne",
+    "Gus"
   ],
   "days": [
     {
@@ -3382,38 +3383,195 @@
       "date": "2026-08-30",
       "rounds": [
         {
-          "city": "",
+          "city": "Auckland, New Zealand",
           "scores": {
             "Gita": 90,
-            "Daniel": 96
+            "Daniel": 100,
+            "Kelly": 94,
+            "Olivia": 89,
+            "Taylor": 0,
+            "Joel": 90,
+            "Daphne": 98
           }
         },
         {
-          "city": "",
+          "city": "Tampa, Florida, USA",
           "scores": {
             "Gita": 100,
-            "Daniel": 100
+            "Daniel": 100,
+            "Kelly": 99,
+            "Olivia": 94,
+            "Taylor": 100,
+            "Joel": 99,
+            "Daphne": 94
           }
         },
         {
-          "city": "",
+          "city": "Toulouse, France",
           "scores": {
             "Gita": 95,
-            "Daniel": 77
+            "Daniel": 93,
+            "Kelly": 93,
+            "Olivia": 87,
+            "Taylor": 92,
+            "Joel": 92,
+            "Daphne": 86
           }
         },
         {
-          "city": "",
+          "city": "Billings, Montana, USA",
           "scores": {
             "Gita": 96,
-            "Daniel": 93
+            "Daniel": 94,
+            "Kelly": 95,
+            "Olivia": 93,
+            "Taylor": 90,
+            "Joel": 95,
+            "Daphne": 96
           }
         },
         {
-          "city": "",
+          "city": "Veraval, Gujarat, India",
           "scores": {
             "Gita": 94,
-            "Daniel": 79
+            "Daniel": 81,
+            "Kelly": 83,
+            "Olivia": 83,
+            "Taylor": 84,
+            "Joel": 82,
+            "Daphne": 82
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1788278504010415",
+      "date": "2026-09-01",
+      "rounds": [
+        {
+          "city": "Khan Younis, Gaza, Palestine",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 99,
+            "Kelly": 100,
+            "Olivia": 96,
+            "Taylor": 64,
+            "Daphne": 95,
+            "Gus": 96
+          }
+        },
+        {
+          "city": "Boston, Massachusetts",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 99,
+            "Olivia": 100,
+            "Taylor": 89,
+            "Daphne": 99,
+            "Gus": 93
+          }
+        },
+        {
+          "city": "Kinshasa, Democratic Republic of the Congo",
+          "scores": {
+            "Gita": 80,
+            "Daniel": 80,
+            "Kelly": 80,
+            "Olivia": 52,
+            "Taylor": 80,
+            "Daphne": 80,
+            "Gus": 82
+          }
+        },
+        {
+          "city": "Jingdezhen, Jiangxi, China",
+          "scores": {
+            "Gita": 93,
+            "Daniel": 86,
+            "Kelly": 98,
+            "Olivia": 80,
+            "Taylor": 65,
+            "Daphne": 95,
+            "Gus": 91
+          }
+        },
+        {
+          "city": "the location where the Titanic sank",
+          "scores": {
+            "Gita": 66,
+            "Daniel": 85,
+            "Kelly": 72,
+            "Olivia": 62,
+            "Taylor": 8,
+            "Daphne": 73,
+            "Gus": 76
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1788284867121775",
+      "date": "2026-08-31",
+      "rounds": [
+        {
+          "city": "Lisbon, Portugal",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 99,
+            "Kelly": 99,
+            "Olivia": 99,
+            "Taylor": 94,
+            "Joel": 100,
+            "Daphne": 94
+          }
+        },
+        {
+          "city": "Rome, Italy",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 98,
+            "Kelly": 98,
+            "Olivia": 94,
+            "Taylor": 93,
+            "Joel": 98,
+            "Daphne": 98
+          }
+        },
+        {
+          "city": "Taipei, Taiwan",
+          "scores": {
+            "Gita": 97,
+            "Daniel": 97,
+            "Kelly": 97,
+            "Olivia": 83,
+            "Taylor": 69,
+            "Joel": 96,
+            "Daphne": 87
+          }
+        },
+        {
+          "city": "Rivne, Ukraine",
+          "scores": {
+            "Gita": 94,
+            "Daniel": 87,
+            "Kelly": 93,
+            "Olivia": 66,
+            "Taylor": 94,
+            "Joel": 92,
+            "Daphne": 94
+          }
+        },
+        {
+          "city": "Bishkek, Kyrgyzstan",
+          "scores": {
+            "Gita": 81,
+            "Daniel": 94,
+            "Kelly": 80,
+            "Olivia": 62,
+            "Taylor": 51,
+            "Joel": 80,
+            "Daphne": 81
           }
         }
       ]
