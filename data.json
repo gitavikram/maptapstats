@@ -3445,72 +3445,6 @@
       ]
     },
     {
-      "id": "d1788278504010415",
-      "date": "2026-09-01",
-      "rounds": [
-        {
-          "city": "Khan Younis, Gaza, Palestine",
-          "scores": {
-            "Gita": 99,
-            "Daniel": 99,
-            "Kelly": 100,
-            "Olivia": 96,
-            "Taylor": 64,
-            "Daphne": 95,
-            "Gus": 96
-          }
-        },
-        {
-          "city": "Boston, Massachusetts",
-          "scores": {
-            "Gita": 100,
-            "Daniel": 100,
-            "Kelly": 99,
-            "Olivia": 100,
-            "Taylor": 89,
-            "Daphne": 99,
-            "Gus": 93
-          }
-        },
-        {
-          "city": "Kinshasa, Democratic Republic of the Congo",
-          "scores": {
-            "Gita": 80,
-            "Daniel": 80,
-            "Kelly": 80,
-            "Olivia": 52,
-            "Taylor": 80,
-            "Daphne": 80,
-            "Gus": 82
-          }
-        },
-        {
-          "city": "Jingdezhen, Jiangxi, China",
-          "scores": {
-            "Gita": 93,
-            "Daniel": 86,
-            "Kelly": 98,
-            "Olivia": 80,
-            "Taylor": 65,
-            "Daphne": 95,
-            "Gus": 91
-          }
-        },
-        {
-          "city": "the location where the Titanic sank",
-          "scores": {
-            "Gita": 66,
-            "Daniel": 85,
-            "Kelly": 72,
-            "Olivia": 62,
-            "Taylor": 8,
-            "Daphne": 73,
-            "Gus": 76
-          }
-        }
-      ]
-    },
-    {
       "id": "d1788284867121775",
       "date": "2026-08-31",
       "rounds": [
@@ -3572,6 +3506,77 @@
             "Taylor": 51,
             "Joel": 80,
             "Daphne": 81
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1788278504010415",
+      "date": "2026-09-01",
+      "rounds": [
+        {
+          "city": "Khan Younis, Gaza, Palestine",
+          "scores": {
+            "Gita": 99,
+            "Daniel": 99,
+            "Kelly": 100,
+            "Olivia": 96,
+            "Taylor": 64,
+            "Daphne": 95,
+            "Gus": 96,
+            "Joel": 98
+          }
+        },
+        {
+          "city": "Boston, Massachusetts",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 99,
+            "Olivia": 100,
+            "Taylor": 89,
+            "Daphne": 99,
+            "Gus": 93,
+            "Joel": 100
+          }
+        },
+        {
+          "city": "Kinshasa, Democratic Republic of the Congo",
+          "scores": {
+            "Gita": 80,
+            "Daniel": 80,
+            "Kelly": 80,
+            "Olivia": 52,
+            "Taylor": 80,
+            "Daphne": 80,
+            "Gus": 82,
+            "Joel": 80
+          }
+        },
+        {
+          "city": "Jingdezhen, Jiangxi, China",
+          "scores": {
+            "Gita": 93,
+            "Daniel": 86,
+            "Kelly": 98,
+            "Olivia": 80,
+            "Taylor": 65,
+            "Daphne": 95,
+            "Gus": 91,
+            "Joel": 99
+          }
+        },
+        {
+          "city": "the location where the Titanic sank",
+          "scores": {
+            "Gita": 66,
+            "Daniel": 85,
+            "Kelly": 72,
+            "Olivia": 62,
+            "Taylor": 8,
+            "Daphne": 73,
+            "Gus": 76,
+            "Joel": 55
           }
         }
       ]
