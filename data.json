@@ -4265,6 +4265,118 @@
           }
         }
       ]
+    },
+    {
+      "id": "d1789393961841903",
+      "date": "2026-09-13",
+      "rounds": [
+        {
+          "city": "Indianapolis, Indiana, USA",
+          "scores": {
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Olivia": 100,
+            "Taylor": 100,
+            "Joel": 100,
+            "Daphne": 100
+          }
+        },
+        {
+          "city": "Poznań, Poland",
+          "scores": {
+            "Gita": 90,
+            "Daniel": 99,
+            "Kelly": 96,
+            "Olivia": 78,
+            "Taylor": 97,
+            "Joel": 97,
+            "Daphne": 82
+          }
+        },
+        {
+          "city": "Cherkasy, Ukraine",
+          "scores": {
+            "Gita": 98,
+            "Daniel": 97,
+            "Kelly": 95,
+            "Olivia": 81,
+            "Taylor": 89,
+            "Joel": 97,
+            "Daphne": 85
+          }
+        },
+        {
+          "city": "Tapachula, Chiapas, Mexico",
+          "scores": {
+            "Gita": 84,
+            "Daniel": 78,
+            "Kelly": 91,
+            "Olivia": 82,
+            "Taylor": 80,
+            "Joel": 68,
+            "Daphne": 80
+          }
+        },
+        {
+          "city": "Dodoma, Tanzania",
+          "scores": {
+            "Gita": 91,
+            "Daniel": 89,
+            "Kelly": 80,
+            "Olivia": 98,
+            "Taylor": 77,
+            "Joel": 69,
+            "Daphne": 78
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1789393993439771",
+      "date": "2026-09-14",
+      "rounds": [
+        {
+          "city": "",
+          "scores": {
+            "Gita": 96,
+            "Daniel": 95,
+            "Kelly": 98
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 95,
+            "Daniel": 93,
+            "Kelly": 92
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 98,
+            "Daniel": 99,
+            "Kelly": 90
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 98,
+            "Daniel": 94,
+            "Kelly": 94
+          }
+        },
+        {
+          "city": "",
+          "scores": {
+            "Gita": 95,
+            "Daniel": 97,
+            "Kelly": 96
+          }
+        }
+      ]
     }
   ]
 }
