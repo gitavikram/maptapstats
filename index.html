@@ -538,38 +538,6 @@ function renderPlayerBody(player){
     </table>
   `;
 }
-  if(!player) return '<p>Add a player first.</p>';
-  const totals = state.days.map(d=>dayTotal(d,player));
-  const sum = totals.reduce((a,b)=>a+b,0);
-  const played = state.days.filter(d=>d.rounds.some(r=>typeof r.scores[player]==='number')).length;
-  const avg = played? sum/played : 0;
-  let best=null, worst=null;
-  state.days.forEach(d=>d.rounds.forEach(r=>{
-    const v = r.scores[player];
-    if(typeof v!=='number' || !r.city) return;
-    if(!best || v>best.score) best={city:r.city, score:v};
-    if(!worst || v<worst.score) worst={city:r.city, score:v};
-  }));
-  const playedDays = state.days
-    .filter(d=>d.rounds.some(r=>typeof r.scores[player]==='number'))
-    .slice()
-    .sort((a,b)=>b.date.localeCompare(a.date));
-  return `
-    <p>Best Score: ${totals.length?Math.max(...totals).toFixed(0):'—'} | Worst Score: ${totals.length?Math.min(...totals).toFixed(0):'—'}</p>
-    <table>
-      <tr><th>Date</th>${[1,2,3,4,5].map(n=>`<th>Round ${n}</th>`).join('')}<th>Day Total</th></tr>
-      ${playedDays.map(d=>{
-        const cells = d.rounds.map(r=>{
-          const v = r.scores[player];
-          const scoreText = typeof v==='number' ? `<strong style="font-size:1.3em;">${v}</strong>` : '—';
-          const cityText = r.city ? `<br><span class="small">${r.city}</span>` : '';
-          return `<td>${scoreText}${cityText}</td>`;
-        }).join('');
-        return `<tr><td>${d.date}</td>${cells}<td>${dayTotal(d,player).toFixed(0)}</td></tr>`;
-      }).join('')}
-    </table>
-  `;
-}
 
 function viewCities(){
   const cities = cityStats();
