@@ -217,7 +217,7 @@ function lineChart(series, width=700, height=600, sortedDates=[]){
   const minY = rawMin - cushion;
   const maxY = rawMax + cushion;
   const range = maxY - minY;
-  const maxLen = Math.max(1, sortedDates.length, ...series.map(s=>s.points.length)) - 1;
+  const maxLen = Math.max(1, sortedDates.length - 1);
 
   const xPos = i => maxLen===0 ? pad : pad + (i/maxLen)*(width-pad*1.5);
   const yPos = v => height-pad - ((v-minY)/range)*(height-pad*1.6);
@@ -251,11 +251,14 @@ function lineChart(series, width=700, height=600, sortedDates=[]){
   });
 
   series.forEach(s=>{
-    if(s.points.length===0) return;
-    const pts = s.points.map((p,i)=>`${xPos(i)},${yPos(p.y)}`).join(' ');
-    svg += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
-    s.points.forEach((p,i)=>{
-      const cx = xPos(i), cy = yPos(p.y);
+    // place each point at its REAL date's position, not its index within this player's own array
+    const pts = s.points.filter(p=>sortedDates.includes(p.x));
+    if(pts.length===0) return;
+    const polyPts = pts.map(p=>`${xPos(sortedDates.indexOf(p.x))},${yPos(p.y)}`).join(' ');
+    svg += `<polyline points="${polyPts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+    pts.forEach(p=>{
+      const idx = sortedDates.indexOf(p.x);
+      const cx = xPos(idx), cy = yPos(p.y);
       svg += `<circle cx="${cx}" cy="${cy}" r="3" fill="${s.color}"/>`;
     });
   });
