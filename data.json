@@ -4467,35 +4467,51 @@
           "city": "Dortmund, Germany",
           "scores": {
             "Gita": 94,
-            "Kelly": 99
+            "Kelly": 99,
+            "Olivia": 96,
+            "Daphne": 98,
+            "Daniel": 95
+
           }
         },
         {
           "city": "Montreal, Quebec, Canada",
           "scores": {
             "Gita": 100,
-            "Kelly": 100
+            "Kelly": 100,
+            "Olivia": 99,
+            "Daphne": 76,
+            "Daniel": 100
           }
         },
         {
           "city": "Luján, Buenos Aires Province, Argentina",
           "scores": {
             "Gita": 78,
-            "Kelly": 84
+            "Kelly": 84,
+            "Olivia": 60,
+            "Daphne": 82,
+            "Daniel": 100
           }
         },
         {
           "city": "Port Moresby, Papua New Guinea",
           "scores": {
             "Gita": 100,
-            "Kelly": 100
+            "Kelly": 100,
+            "Olivia": 68,
+            "Daphne": 100,
+            "Daniel": 100
           }
         },
         {
           "city": "Yerevan, Armenia",
           "scores": {
             "Gita": 91,
-            "Kelly": 83
+            "Kelly": 83,
+            "Olivia": 93,
+            "Daphne": 92,
+            "Daniel": 96
           }
         }
       ]
