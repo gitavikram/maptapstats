@@ -5550,71 +5550,56 @@
         {
           "city": "Tel Aviv, Israel",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Daniel": 96,
+            "Kelly": 100,
+            "Taylor": 61,
+            "Joel": 98,
+            "Daphne": 98
           }
         },
         {
           "city": "Miaoli City, Taiwan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Daniel": 97,
+            "Kelly": 73,
+            "Taylor": 71,
+            "Joel": 78,
+            "Daphne": 99
           }
         },
         {
           "city": "Dijon, France",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Daniel": 95,
+            "Kelly": 95,
+            "Taylor": 98,
+            "Joel": 95,
+            "Daphne": 96
           }
         },
         {
           "city": "Fort Knox, Kentucky, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 94,
+            "Daniel": 99,
+            "Kelly": 99,
+            "Taylor": 88,
+            "Joel": 93,
+            "Daphne": 87
           }
         },
         {
           "city": "Bukavu, Democratic Republic of the Congo",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 78,
+            "Daniel": 88,
+            "Kelly": 83,
+            "Taylor": 82,
+            "Joel": 84,
+            "Daphne": 74
           }
         }
       ]
@@ -5626,71 +5611,56 @@
         {
           "city": "Nuremberg, Germany",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Daniel": 94,
+            "Kelly": 98,
+            "Olivia": 91,
+            "Joel": 93,
+            "Daphne": 89
           }
         },
         {
           "city": "Larvik, Norway",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Daniel": 99,
+            "Kelly": 95,
+            "Olivia": 86,
+            "Joel": 97,
+            "Daphne": 99
           }
         },
         {
           "city": "Maracaibo, Venezuela",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 86,
+            "Daniel": 92,
+            "Kelly": 85,
+            "Olivia": 75,
+            "Joel": 92,
+            "Daphne": 93
           }
         },
         {
           "city": "Mobile, Alabama, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 93,
+            "Daniel": 94,
+            "Kelly": 98,
+            "Olivia": 92,
+            "Joel": 93,
+            "Daphne": 96
           }
         },
         {
           "city": "Pucallpa, Peru",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 80,
+            "Daniel": 94,
+            "Kelly": 97,
+            "Olivia": 81,
+            "Joel": 81,
+            "Daphne": 91
           }
         }
       ]
@@ -5702,71 +5672,51 @@
         {
           "city": "Paris, France",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 98,
+            "Joel": 99,
+            "Daphne": 100
           }
         },
         {
           "city": "Hamilton, New Zealand",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 90,
+            "Daniel": 100,
+            "Kelly": 90,
+            "Joel": 91,
+            "Daphne": 86
           }
         },
         {
           "city": "Tucson, Arizona, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 94,
+            "Daniel": 87,
+            "Kelly": 88,
+            "Joel": 93,
+            "Daphne": 88
           }
         },
         {
           "city": "Concepción, Chile",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 68,
+            "Daniel": 97,
+            "Kelly": 83,
+            "Joel": 92,
+            "Daphne": 91
           }
         },
         {
           "city": "Semey, Kazakhstan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 80,
+            "Daniel": 80,
+            "Kelly": 80,
+            "Joel": 85,
+            "Daphne": 80
           }
         }
       ]
@@ -5778,71 +5728,46 @@
         {
           "city": "Sydney, New South Wales, Australia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 100,
+            "Kelly": 100,
+            "Olivia": 89,
+            "Taylor": 87
           }
         },
         {
           "city": "Trondheim, Norway",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 91,
+            "Kelly": 94,
+            "Olivia": 83,
+            "Taylor": 94
           }
         },
         {
           "city": "Newcastle, New South Wales, Australia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 71,
+            "Olivia": 84,
+            "Taylor": 90
           }
         },
         {
           "city": "Makassar, Sulawesi, Indonesia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 73,
+            "Kelly": 83,
+            "Olivia": 71,
+            "Taylor": 89
           }
         },
         {
           "city": "Klamath Falls, Oregon, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 98,
+            "Olivia": 92,
+            "Taylor": 97
           }
         }
       ]
@@ -5854,71 +5779,36 @@
         {
           "city": "Zurich, Switzerland",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 98,
+            "Joel": 96
           }
         },
         {
           "city": "Bloemfontein, South Africa",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 95,
+            "Joel": 88
           }
         },
         {
           "city": "Albuquerque, New Mexico, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 94,
+            "Joel": 96
           }
         },
         {
           "city": "Windhoek, Namibia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 62,
+            "Joel": 74
           }
         },
         {
           "city": "Dori, Burkina Faso",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 87,
+            "Joel": 85
           }
         }
       ]
@@ -5930,71 +5820,51 @@
         {
           "city": "Geel, Belgium",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Daniel": 97,
+            "Kelly": 98,
+            "Olivia": 91,
+            "Joel": 97
           }
         },
         {
           "city": "La Paz, Bolivia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 88,
+            "Daniel": 88,
+            "Kelly": 88,
+            "Olivia": 11,
+            "Joel": 88
           }
         },
         {
           "city": "Accra, Ghana",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 96,
+            "Daniel": 91,
+            "Kelly": 96,
+            "Olivia": 62,
+            "Joel": 83
           }
         },
         {
           "city": "Ryotsu, Sado Island, Japan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 75,
+            "Daniel": 96,
+            "Kelly": 79,
+            "Olivia": 95,
+            "Joel": 88
           }
         },
         {
           "city": "Jos, Nigeria",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 89,
+            "Daniel": 90,
+            "Kelly": 90,
+            "Olivia": 81,
+            "Joel": 89
           }
         }
       ]
@@ -6006,71 +5876,36 @@
         {
           "city": "Gdańsk, Poland",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 92,
+            "Daniel": 98
           }
         },
         {
           "city": "Huế, Vietnam",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 93,
+            "Daniel": 93
           }
         },
         {
           "city": "Cochabamba, Bolivia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Daniel": 94
           }
         },
         {
           "city": "Guadalcanal, Solomon Islands",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 31,
+            "Daniel": 67
           }
         },
         {
           "city": "Monowi, Nebraska, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 96,
+            "Daniel": 96
           }
         }
       ]
@@ -6082,71 +5917,41 @@
         {
           "city": "San Francisco, California, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Kelly": 99,
+            "Joel": 100
           }
         },
         {
           "city": "Turin, Italy",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 91,
+            "Kelly": 90,
+            "Joel": 95
           }
         },
         {
           "city": "Babylon, Iraq",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Kelly": 74,
+            "Joel": 98
           }
         },
         {
           "city": "Celje, Slovenia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 85,
+            "Joel": 96
           }
         },
         {
           "city": "Ciudad de la Paz, Equatorial Guinea",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 60,
+            "Kelly": 68,
+            "Joel": 93
           }
         }
       ]
@@ -6234,71 +6039,36 @@
         {
           "city": "Vienna, Austria",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 93,
+            "Kelly": 99
           }
         },
         {
           "city": "Reykjavík, Iceland",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 96
           }
         },
         {
           "city": "Guangzhou, Guangdong, China",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Kelly": 86
           }
         },
         {
           "city": "Agra, India",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 94,
+            "Kelly": 87
           }
         },
         {
           "city": "Petrópolis, Rio de Janeiro, Brazil",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Kelly": 95
           }
         }
       ]
@@ -6310,71 +6080,36 @@
         {
           "city": "Cairo, Egypt",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 93,
+            "Kelly": 99
           }
         },
         {
           "city": "Bizerte, Tunisia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Kelly": 96
           }
         },
         {
           "city": "Salt Lake City, Utah, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Kelly": 100
           }
         },
         {
           "city": "Cap-Haïtien, Haiti",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 98
           }
         },
         {
           "city": "Elephant Island, Antarctica",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 75,
+            "Kelly": 78
           }
         }
       ]
@@ -6386,71 +6121,31 @@
         {
           "city": "Honolulu, Hawaii, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 100
           }
         },
         {
           "city": "Kraków, Poland",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 92
           }
         },
         {
           "city": "Nagasaki, Japan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 89
           }
         },
         {
           "city": "Rovaniemi, Finland",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 86
           }
         },
         {
           "city": "Hyderabad, Telangana, India",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 81
           }
         }
       ]
@@ -6614,71 +6309,36 @@
         {
           "city": "Sofia, Bulgaria",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 89,
+            "Kelly": 93
           }
         },
         {
           "city": "The Matterhorn, Switzerland/Italy",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 92,
+            "Kelly": 99
           }
         },
         {
           "city": "Nuuk, Greenland",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 80,
+            "Kelly": 93
           }
         },
         {
           "city": "Las Palmas, Gran Canaria, Spain",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 69,
+            "Kelly": 98
           }
         },
         {
           "city": "Cabangu, Minas Gerais, Brazil",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 75
           }
         }
       ]
@@ -6690,71 +6350,36 @@
         {
           "city": "Dundee, Scotland, UK",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Kelly": 98
           }
         },
         {
           "city": "Beijing, China",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 75
           }
         },
         {
           "city": "Limón, Costa Rica",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Kelly": 98
           }
         },
         {
           "city": "Winnipeg, Manitoba, Canada",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 100,
+            "Kelly": 97
           }
         },
         {
           "city": "Albury, New South Wales, Australia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 92,
+            "Kelly": 80
           }
         }
       ]
@@ -6766,71 +6391,36 @@
         {
           "city": "St. Petersburg, Russia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 100,
+            "Kelly": 83
           }
         },
         {
           "city": "Bangkok, Thailand",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Kelly": 100
           }
         },
         {
           "city": "Tulsa, Oklahoma, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Kelly": 100
           }
         },
         {
           "city": "Geelong, Victoria, Australia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Kelly": 90
           }
         },
         {
           "city": "Almaty, Kazakhstan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 81,
+            "Kelly": 80
           }
         }
       ]
@@ -6842,71 +6432,36 @@
         {
           "city": "Kyoto, Japan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Kelly": 99
           }
         },
         {
           "city": "Isles of Scilly, England",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 92,
+            "Kelly": 100
           }
         },
         {
           "city": "Maputo, Mozambique",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 79,
+            "Kelly": 66
           }
         },
         {
           "city": "Butte, Montana, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 93,
+            "Kelly": 97
           }
         },
         {
           "city": "Kropyvnytskyi, Ukraine",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 98,
+            "Kelly": 93
           }
         }
       ]
@@ -6918,71 +6473,46 @@
         {
           "city": "São Paulo, Brazil",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Daniel": 96,
+            "Kelly": 99,
+            "Joel": 99
           }
         },
         {
           "city": "Burgas, Bulgaria",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 96,
+            "Daniel": 99,
+            "Kelly": 81,
+            "Joel": 93
           }
         },
         {
           "city": "Wichita, Kansas, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 99,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Joel": 100
           }
         },
         {
           "city": "Al-Qurnah, Iraq",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 91,
+            "Daniel": 99,
+            "Kelly": 83,
+            "Joel": 98
           }
         },
         {
           "city": "Bangkok, Thailand",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Daniel": 100,
+            "Kelly": 100,
+            "Joel": 98
           }
         }
       ]
@@ -6994,71 +6524,31 @@
         {
           "city": "Copenhagen, Denmark",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Daniel": 100
           }
         },
         {
           "city": "Jacksonville, Florida, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Daniel": 100
           }
         },
         {
           "city": "Lusaka, Zambia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Daniel": 91
           }
         },
         {
           "city": "San Juan, Puerto Rico",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Daniel": 100
           }
         },
         {
           "city": "Kazan, Tatarstan, Russia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Daniel": 74
           }
         }
       ]
@@ -7070,71 +6560,46 @@
         {
           "city": "Hiroshima, Japan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 95,
+            "Daniel": 91,
+            "Kelly": 96,
+            "Joel": 85
           }
         },
         {
           "city": "Kinmen, Taiwan",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 94,
+            "Daniel": 95,
+            "Kelly": 95,
+            "Joel": 93
           }
         },
         {
           "city": "Uluru (Ayers Rock), Northern Territory, Australia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 74,
+            "Daniel": 81,
+            "Kelly": 64,
+            "Joel": 75
           }
         },
         {
           "city": "Abeokuta, Nigeria",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 92,
+            "Daniel": 91,
+            "Kelly": 92,
+            "Joel": 85
           }
         },
         {
           "city": "Mount Katahdin, Maine, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Daniel": 94,
+            "Kelly": 98,
+            "Joel": 94
           }
         }
       ]
@@ -7146,71 +6611,36 @@
         {
           "city": "Frankfurt, Germany",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 95,
+            "Joel": 92
           }
         },
         {
           "city": "Stockholm, Sweden",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 90,
+            "Joel": 90
           }
         },
         {
           "city": "Freetown, Sierra Leone",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 80,
+            "Joel": 84
           }
         },
         {
           "city": "Yangon, Myanmar",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 84,
+            "Joel": 88
           }
         },
         {
           "city": "Yaren, Nauru",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 74,
+            "Joel": 64
           }
         }
       ]
@@ -7222,71 +6652,31 @@
         {
           "city": "Holguín, Cuba",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 93
           }
         },
         {
           "city": "Lagos, Nigeria",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 89
           }
         },
         {
           "city": "Jakarta, Indonesia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 100
           }
         },
         {
           "city": "Tuskegee, Alabama, USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 95
           }
         },
         {
           "city": "Bologna, Italy",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Kelly": 98
           }
         }
       ]
@@ -7374,71 +6764,41 @@
         {
           "city": "University of California, Los Angeles (UCLA), USA",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 100,
+            "Daniel": 99,
+            "Kelly": 98
           }
         },
         {
           "city": "Alexandria, Egypt",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 97,
+            "Daniel": 97,
+            "Kelly": 97
           }
         },
         {
           "city": "Rio de Janeiro, Brazil",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 100,
+            "Daniel": 100,
+            "Kelly": 100
           }
         },
         {
           "city": "Pretoria, South Africa",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 86,
+            "Daniel": 88,
+            "Kelly": 86
           }
         },
         {
           "city": "Phnom Penh, Cambodia",
           "scores": {
-            "Gita": null,
-            "Daniel": null,
-            "Kelly": null,
-            "Olivia": null,
-            "Brandon": null,
-            "Taylor": null,
-            "Joel": null,
-            "Daphne": null,
-            "Gus": null
+            "Gita": 91,
+            "Daniel": 100,
+            "Kelly": 94
           }
         }
       ]
